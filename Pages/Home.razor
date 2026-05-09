@@ -1,0 +1,105 @@
+@page "/"
+@inject ISrsService Srs
+@inject ICharacterRepository Repo
+
+<PageTitle>Jappo — Learn Japanese</PageTitle>
+
+<div class="page-home">
+    <header class="home-hero">
+        <h1 class="hero-title">
+            <span class="hero-ja">日本語</span>
+            <span class="hero-sub">Japanese Character Trainer</span>
+        </h1>
+    </header>
+
+    @if (_stats is not null)
+    {
+        <section class="stats-grid">
+            @foreach (var (set, stat) in _stats)
+            {
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-ja">@SetJa(set)</span>
+                        <span class="stat-en">@set</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Due</span>
+                        <span class="stat-value @(stat.Due > 0 ? "due-badge" : "")">@stat.Due</span>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">Learned</span>
+                        <span class="stat-value">@stat.Learned / @stat.Total</span>
+                    </div>
+                    <div class="stat-progress">
+                        <div class="stat-bar" style="width: @(stat.Total == 0 ? 0 : stat.Learned * 100 / stat.Total)%"></div>
+                    </div>
+                </div>
+            }
+        </section>
+    }
+
+    <section class="quick-start">
+        <h2>Start Studying</h2>
+        <div class="mode-grid">
+            <a class="mode-card" href="study/flashcard">
+                <span class="mode-icon">🃏</span>
+                <span class="mode-name">Flashcards</span>
+                <span class="mode-desc">SRS-powered review with mnemonic hints</span>
+            </a>
+            <a class="mode-card" href="study/quiz">
+                <span class="mode-icon">❓</span>
+                <span class="mode-name">Quiz</span>
+                <span class="mode-desc">Multiple-choice — pick the correct reading</span>
+            </a>
+            <a class="mode-card" href="study/typing">
+                <span class="mode-icon">⌨️</span>
+                <span class="mode-name">Typing</span>
+                <span class="mode-desc">Type the romaji for each character</span>
+            </a>
+            <a class="mode-card" href="stroke-order">
+                <span class="mode-icon">✍️</span>
+                <span class="mode-name">Stroke Order</span>
+                <span class="mode-desc">See how each character is drawn</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="char-preview">
+        <h2>Character Preview</h2>
+        <div class="preview-tabs">
+            @foreach (var set in Enum.GetValues<CharacterSet>())
+            {
+                <button class="tab-btn @(_previewSet == set ? "active" : "")"
+                        @onclick="() => _previewSet = set">
+                    @SetJa(set)
+                </button>
+            }
+        </div>
+        <div class="preview-grid">
+            @foreach (var ch in Repo.GetBySet(_previewSet).Take(50))
+            {
+                <div class="preview-char" title="@(string.Join(", ", ch.Readings))">
+                    @ch.Glyph
+                </div>
+            }
+        </div>
+    </section>
+</div>
+
+@code {
+    private Dictionary<CharacterSet, (int Total, int Due, int Learned)>? _stats;
+    private CharacterSet _previewSet = CharacterSet.Hiragana;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _stats = await Srs.GetStatsAsync();
+    }
+
+    private static string SetJa(CharacterSet set) => set switch
+    {
+        CharacterSet.Hiragana => "ひらがな",
+        CharacterSet.Katakana => "カタカナ",
+        CharacterSet.Kanji    => "漢字",
+        _ => set.ToString()
+    };
+}

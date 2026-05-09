@@ -1,0 +1,2199 @@
+{
+  "version": 1,
+  "set": "Kanji",
+  "characters": [
+    {
+      "id": "kanji-4e00",
+      "set": "Kanji",
+      "glyph": "一",
+      "readings": [
+        "いち",
+        "いつ",
+        "ひと"
+      ],
+      "meaning": "one",
+      "unicode": "04E00",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "One horizontal stroke = one",
+      "exampleWords": [
+        {
+          "word": "一日",
+          "romaji": "ichinichi",
+          "meaning": "one day"
+        },
+        {
+          "word": "一番",
+          "romaji": "ichiban",
+          "meaning": "number one / best"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4e8c",
+      "set": "Kanji",
+      "glyph": "二",
+      "readings": [
+        "に",
+        "ふた"
+      ],
+      "meaning": "two",
+      "unicode": "04E8C",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Two horizontal strokes = two",
+      "exampleWords": [
+        {
+          "word": "二人",
+          "romaji": "futari",
+          "meaning": "two people"
+        },
+        {
+          "word": "二月",
+          "romaji": "nigatsu",
+          "meaning": "February"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4e09",
+      "set": "Kanji",
+      "glyph": "三",
+      "readings": [
+        "さん",
+        "み"
+      ],
+      "meaning": "three",
+      "unicode": "04E09",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Three horizontal strokes = three",
+      "exampleWords": [
+        {
+          "word": "三月",
+          "romaji": "sangatsu",
+          "meaning": "March"
+        },
+        {
+          "word": "三つ",
+          "romaji": "mittsu",
+          "meaning": "three things"
+        }
+      ]
+    },
+    {
+      "id": "kanji-56db",
+      "set": "Kanji",
+      "glyph": "四",
+      "readings": [
+        "し",
+        "よん",
+        "よ"
+      ],
+      "meaning": "four",
+      "unicode": "056DB",
+      "strokeCount": 5,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A window frame divided into four panes",
+      "exampleWords": [
+        {
+          "word": "四月",
+          "romaji": "shigatsu",
+          "meaning": "April"
+        },
+        {
+          "word": "四時",
+          "romaji": "yoji",
+          "meaning": "four o'clock"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4e94",
+      "set": "Kanji",
+      "glyph": "五",
+      "readings": [
+        "ご",
+        "いつ"
+      ],
+      "meaning": "five",
+      "unicode": "04E94",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A hand showing five fingers from above",
+      "exampleWords": [
+        {
+          "word": "五月",
+          "romaji": "gogatsu",
+          "meaning": "May"
+        },
+        {
+          "word": "五分",
+          "romaji": "gofun",
+          "meaning": "five minutes"
+        }
+      ]
+    },
+    {
+      "id": "kanji-516d",
+      "set": "Kanji",
+      "glyph": "六",
+      "readings": [
+        "ろく",
+        "む"
+      ],
+      "meaning": "six",
+      "unicode": "0516D",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An umbrella with six ribs",
+      "exampleWords": [
+        {
+          "word": "六月",
+          "romaji": "rokugatsu",
+          "meaning": "June"
+        },
+        {
+          "word": "六時",
+          "romaji": "rokuji",
+          "meaning": "six o'clock"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4e03",
+      "set": "Kanji",
+      "glyph": "七",
+      "readings": [
+        "しち",
+        "なな"
+      ],
+      "meaning": "seven",
+      "unicode": "04E03",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A hook like the number 7",
+      "exampleWords": [
+        {
+          "word": "七月",
+          "romaji": "shichigatsu",
+          "meaning": "July"
+        },
+        {
+          "word": "七時",
+          "romaji": "shichiji",
+          "meaning": "seven o'clock"
+        }
+      ]
+    },
+    {
+      "id": "kanji-516b",
+      "set": "Kanji",
+      "glyph": "八",
+      "readings": [
+        "はち",
+        "や"
+      ],
+      "meaning": "eight",
+      "unicode": "0516B",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Two diverging lines — things spreading out",
+      "exampleWords": [
+        {
+          "word": "八月",
+          "romaji": "hachigatsu",
+          "meaning": "August"
+        },
+        {
+          "word": "八百屋",
+          "romaji": "yaoya",
+          "meaning": "greengrocer"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4e5d",
+      "set": "Kanji",
+      "glyph": "九",
+      "readings": [
+        "きゅう",
+        "く",
+        "ここの"
+      ],
+      "meaning": "nine",
+      "unicode": "04E5D",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Looks like a crook's arm — 'nein, give it back!'",
+      "exampleWords": [
+        {
+          "word": "九月",
+          "romaji": "kugatsu",
+          "meaning": "September"
+        },
+        {
+          "word": "九時",
+          "romaji": "kuji",
+          "meaning": "nine o'clock"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5341",
+      "set": "Kanji",
+      "glyph": "十",
+      "readings": [
+        "じゅう",
+        "とお"
+      ],
+      "meaning": "ten",
+      "unicode": "05341",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A cross/plus sign — ten on a timer",
+      "exampleWords": [
+        {
+          "word": "十月",
+          "romaji": "juugatsu",
+          "meaning": "October"
+        },
+        {
+          "word": "二十",
+          "romaji": "nijuu",
+          "meaning": "twenty"
+        }
+      ]
+    },
+    {
+      "id": "kanji-767e",
+      "set": "Kanji",
+      "glyph": "百",
+      "readings": [
+        "ひゃく"
+      ],
+      "meaning": "hundred",
+      "unicode": "0767E",
+      "strokeCount": 6,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "One (一) on top of white (白) — hundred white ones",
+      "exampleWords": [
+        {
+          "word": "三百",
+          "romaji": "sanbyaku",
+          "meaning": "three hundred"
+        },
+        {
+          "word": "百円",
+          "romaji": "hyakuen",
+          "meaning": "100 yen"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5343",
+      "set": "Kanji",
+      "glyph": "千",
+      "readings": [
+        "せん",
+        "ち"
+      ],
+      "meaning": "thousand",
+      "unicode": "05343",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person (人) with a hat — a thousand people",
+      "exampleWords": [
+        {
+          "word": "千円",
+          "romaji": "sen'en",
+          "meaning": "1000 yen"
+        },
+        {
+          "word": "三千",
+          "romaji": "sanzen",
+          "meaning": "three thousand"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4e07",
+      "set": "Kanji",
+      "glyph": "万",
+      "readings": [
+        "まん",
+        "ばん"
+      ],
+      "meaning": "ten thousand",
+      "unicode": "04E07",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Like a scorpion — 'man, that's ten thousand!'",
+      "exampleWords": [
+        {
+          "word": "一万円",
+          "romaji": "ichimanen",
+          "meaning": "10,000 yen"
+        },
+        {
+          "word": "万国",
+          "romaji": "bankoku",
+          "meaning": "all nations"
+        }
+      ]
+    },
+    {
+      "id": "kanji-65e5",
+      "set": "Kanji",
+      "glyph": "日",
+      "readings": [
+        "にち",
+        "じつ",
+        "ひ",
+        "か"
+      ],
+      "meaning": "sun / day",
+      "unicode": "065E5",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A window frame looking at the sun",
+      "exampleWords": [
+        {
+          "word": "毎日",
+          "romaji": "mainichi",
+          "meaning": "every day"
+        },
+        {
+          "word": "日本",
+          "romaji": "Nihon",
+          "meaning": "Japan"
+        }
+      ]
+    },
+    {
+      "id": "kanji-6708",
+      "set": "Kanji",
+      "glyph": "月",
+      "readings": [
+        "げつ",
+        "がつ",
+        "つき"
+      ],
+      "meaning": "moon / month",
+      "unicode": "06708",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A crescent moon shape in a frame",
+      "exampleWords": [
+        {
+          "word": "月曜日",
+          "romaji": "getsuyoubi",
+          "meaning": "Monday"
+        },
+        {
+          "word": "今月",
+          "romaji": "kongetsu",
+          "meaning": "this month"
+        }
+      ]
+    },
+    {
+      "id": "kanji-706b",
+      "set": "Kanji",
+      "glyph": "火",
+      "readings": [
+        "か",
+        "ひ"
+      ],
+      "meaning": "fire",
+      "unicode": "0706B",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person with arms out, flames rising from the sides",
+      "exampleWords": [
+        {
+          "word": "火曜日",
+          "romaji": "kayoubi",
+          "meaning": "Tuesday"
+        },
+        {
+          "word": "花火",
+          "romaji": "hanabi",
+          "meaning": "fireworks"
+        }
+      ]
+    },
+    {
+      "id": "kanji-6c34",
+      "set": "Kanji",
+      "glyph": "水",
+      "readings": [
+        "すい",
+        "みず"
+      ],
+      "meaning": "water",
+      "unicode": "06C34",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Water flowing in a river — a central current with ripples",
+      "exampleWords": [
+        {
+          "word": "水曜日",
+          "romaji": "suiyoubi",
+          "meaning": "Wednesday"
+        },
+        {
+          "word": "水泳",
+          "romaji": "suiei",
+          "meaning": "swimming"
+        }
+      ]
+    },
+    {
+      "id": "kanji-6728",
+      "set": "Kanji",
+      "glyph": "木",
+      "readings": [
+        "もく",
+        "ぼく",
+        "き"
+      ],
+      "meaning": "tree / wood",
+      "unicode": "06728",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A tree with a trunk, branches, and roots",
+      "exampleWords": [
+        {
+          "word": "木曜日",
+          "romaji": "mokuyoubi",
+          "meaning": "Thursday"
+        },
+        {
+          "word": "木村",
+          "romaji": "Kimura",
+          "meaning": "Kimura (common surname)"
+        }
+      ]
+    },
+    {
+      "id": "kanji-91d1",
+      "set": "Kanji",
+      "glyph": "金",
+      "readings": [
+        "きん",
+        "こん",
+        "かね"
+      ],
+      "meaning": "gold / money",
+      "unicode": "091D1",
+      "strokeCount": 8,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person (人) on a crown (王) with two dots — golden treasure",
+      "exampleWords": [
+        {
+          "word": "金曜日",
+          "romaji": "kin'youbi",
+          "meaning": "Friday"
+        },
+        {
+          "word": "お金",
+          "romaji": "okane",
+          "meaning": "money"
+        }
+      ]
+    },
+    {
+      "id": "kanji-571f",
+      "set": "Kanji",
+      "glyph": "土",
+      "readings": [
+        "ど",
+        "と",
+        "つち"
+      ],
+      "meaning": "earth / soil",
+      "unicode": "0571F",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A cross on the ground — earth from the ground up",
+      "exampleWords": [
+        {
+          "word": "土曜日",
+          "romaji": "doyoubi",
+          "meaning": "Saturday"
+        },
+        {
+          "word": "土地",
+          "romaji": "tochi",
+          "meaning": "land / plot of land"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5e74",
+      "set": "Kanji",
+      "glyph": "年",
+      "readings": [
+        "ねん",
+        "とし"
+      ],
+      "meaning": "year",
+      "unicode": "05E74",
+      "strokeCount": 6,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person carrying a grain harvest — marking a year's work",
+      "exampleWords": [
+        {
+          "word": "今年",
+          "romaji": "kotoshi",
+          "meaning": "this year"
+        },
+        {
+          "word": "来年",
+          "romaji": "rainen",
+          "meaning": "next year"
+        }
+      ]
+    },
+    {
+      "id": "kanji-6642",
+      "set": "Kanji",
+      "glyph": "時",
+      "readings": [
+        "じ",
+        "とき"
+      ],
+      "meaning": "time / hour",
+      "unicode": "06642",
+      "strokeCount": 10,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Sun (日) + temple (寺) — the temple tracks time with the sun",
+      "exampleWords": [
+        {
+          "word": "何時",
+          "romaji": "nanji",
+          "meaning": "what time?"
+        },
+        {
+          "word": "時間",
+          "romaji": "jikan",
+          "meaning": "time / hour"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5206",
+      "set": "Kanji",
+      "glyph": "分",
+      "readings": [
+        "ふん",
+        "ぶん",
+        "わ"
+      ],
+      "meaning": "minute / divide",
+      "unicode": "05206",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A sword (刀) splitting something in two — dividing minutes",
+      "exampleWords": [
+        {
+          "word": "五分",
+          "romaji": "gofun",
+          "meaning": "five minutes"
+        },
+        {
+          "word": "自分",
+          "romaji": "jibun",
+          "meaning": "oneself"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4eba",
+      "set": "Kanji",
+      "glyph": "人",
+      "readings": [
+        "じん",
+        "にん",
+        "ひと"
+      ],
+      "meaning": "person",
+      "unicode": "04EBA",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person walking — two strokes like legs striding",
+      "exampleWords": [
+        {
+          "word": "日本人",
+          "romaji": "Nihonjin",
+          "meaning": "Japanese person"
+        },
+        {
+          "word": "大人",
+          "romaji": "otona",
+          "meaning": "adult"
+        }
+      ]
+    },
+    {
+      "id": "kanji-7537",
+      "set": "Kanji",
+      "glyph": "男",
+      "readings": [
+        "だん",
+        "なん",
+        "おとこ"
+      ],
+      "meaning": "man / male",
+      "unicode": "07537",
+      "strokeCount": 7,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A rice field (田) with strength (力) — a man works in the field",
+      "exampleWords": [
+        {
+          "word": "男の子",
+          "romaji": "otokonoko",
+          "meaning": "boy"
+        },
+        {
+          "word": "男性",
+          "romaji": "dansei",
+          "meaning": "male / man"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5973",
+      "set": "Kanji",
+      "glyph": "女",
+      "readings": [
+        "じょ",
+        "にょ",
+        "おんな"
+      ],
+      "meaning": "woman",
+      "unicode": "05973",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A woman bowing gracefully with arms crossed",
+      "exampleWords": [
+        {
+          "word": "女の子",
+          "romaji": "onnanoko",
+          "meaning": "girl"
+        },
+        {
+          "word": "女性",
+          "romaji": "josei",
+          "meaning": "female / woman"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5b50",
+      "set": "Kanji",
+      "glyph": "子",
+      "readings": [
+        "し",
+        "こ"
+      ],
+      "meaning": "child",
+      "unicode": "05B50",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A child with arms outstretched, wanting to be picked up",
+      "exampleWords": [
+        {
+          "word": "子供",
+          "romaji": "kodomo",
+          "meaning": "child"
+        },
+        {
+          "word": "女の子",
+          "romaji": "onnanoko",
+          "meaning": "girl"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5c71",
+      "set": "Kanji",
+      "glyph": "山",
+      "readings": [
+        "さん",
+        "ざん",
+        "やま"
+      ],
+      "meaning": "mountain",
+      "unicode": "05C71",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Three peaks of a mountain range",
+      "exampleWords": [
+        {
+          "word": "山田",
+          "romaji": "Yamada",
+          "meaning": "Yamada (common surname)"
+        },
+        {
+          "word": "富士山",
+          "romaji": "Fujisan",
+          "meaning": "Mount Fuji"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5ddd",
+      "set": "Kanji",
+      "glyph": "川",
+      "readings": [
+        "せん",
+        "かわ"
+      ],
+      "meaning": "river",
+      "unicode": "05DDD",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Three flowing streams of water in a river",
+      "exampleWords": [
+        {
+          "word": "川口",
+          "romaji": "Kawaguchi",
+          "meaning": "Kawaguchi (place/surname)"
+        },
+        {
+          "word": "小川",
+          "romaji": "ogawa",
+          "meaning": "stream / brook"
+        }
+      ]
+    },
+    {
+      "id": "kanji-7530",
+      "set": "Kanji",
+      "glyph": "田",
+      "readings": [
+        "でん",
+        "た"
+      ],
+      "meaning": "rice field",
+      "unicode": "07530",
+      "strokeCount": 5,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A rice paddy divided into four sections",
+      "exampleWords": [
+        {
+          "word": "田中",
+          "romaji": "Tanaka",
+          "meaning": "Tanaka (common surname)"
+        },
+        {
+          "word": "田舎",
+          "romaji": "inaka",
+          "meaning": "countryside"
+        }
+      ]
+    },
+    {
+      "id": "kanji-53e3",
+      "set": "Kanji",
+      "glyph": "口",
+      "readings": [
+        "こう",
+        "く",
+        "くち"
+      ],
+      "meaning": "mouth",
+      "unicode": "053E3",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An open mouth — square shape like a surprised mouth",
+      "exampleWords": [
+        {
+          "word": "出口",
+          "romaji": "deguchi",
+          "meaning": "exit"
+        },
+        {
+          "word": "入口",
+          "romaji": "iriguchi",
+          "meaning": "entrance"
+        }
+      ]
+    },
+    {
+      "id": "kanji-76ee",
+      "set": "Kanji",
+      "glyph": "目",
+      "readings": [
+        "もく",
+        "め"
+      ],
+      "meaning": "eye",
+      "unicode": "076EE",
+      "strokeCount": 5,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An eye with a pupil in the center",
+      "exampleWords": [
+        {
+          "word": "目標",
+          "romaji": "mokuhyou",
+          "meaning": "goal / target"
+        },
+        {
+          "word": "目的",
+          "romaji": "mokuteki",
+          "meaning": "purpose"
+        }
+      ]
+    },
+    {
+      "id": "kanji-8033",
+      "set": "Kanji",
+      "glyph": "耳",
+      "readings": [
+        "じ",
+        "みみ"
+      ],
+      "meaning": "ear",
+      "unicode": "08033",
+      "strokeCount": 6,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An ear shape with inner features visible",
+      "exampleWords": [
+        {
+          "word": "耳鼻科",
+          "romaji": "jibishka",
+          "meaning": "ENT doctor"
+        },
+        {
+          "word": "耳元",
+          "romaji": "mimimoto",
+          "meaning": "near the ear"
+        }
+      ]
+    },
+    {
+      "id": "kanji-624b",
+      "set": "Kanji",
+      "glyph": "手",
+      "readings": [
+        "しゅ",
+        "て"
+      ],
+      "meaning": "hand",
+      "unicode": "0624B",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Fingers of a hand spread out",
+      "exampleWords": [
+        {
+          "word": "手紙",
+          "romaji": "tegami",
+          "meaning": "letter (mail)"
+        },
+        {
+          "word": "上手",
+          "romaji": "jouzu",
+          "meaning": "skilled / good at"
+        }
+      ]
+    },
+    {
+      "id": "kanji-8db3",
+      "set": "Kanji",
+      "glyph": "足",
+      "readings": [
+        "そく",
+        "あし"
+      ],
+      "meaning": "foot / leg",
+      "unicode": "08DB3",
+      "strokeCount": 7,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A foot with toes — the foot bone connected to the leg bone",
+      "exampleWords": [
+        {
+          "word": "足りない",
+          "romaji": "tarinai",
+          "meaning": "not enough"
+        },
+        {
+          "word": "遠足",
+          "romaji": "ensoku",
+          "meaning": "field trip / excursion"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4e0a",
+      "set": "Kanji",
+      "glyph": "上",
+      "readings": [
+        "じょう",
+        "うえ",
+        "あ"
+      ],
+      "meaning": "above / up",
+      "unicode": "04E0A",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A line rising above a base — going up",
+      "exampleWords": [
+        {
+          "word": "上手",
+          "romaji": "jouzu",
+          "meaning": "skilled"
+        },
+        {
+          "word": "上着",
+          "romaji": "uwagi",
+          "meaning": "jacket / coat"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4e0b",
+      "set": "Kanji",
+      "glyph": "下",
+      "readings": [
+        "か",
+        "げ",
+        "した"
+      ],
+      "meaning": "below / down",
+      "unicode": "04E0B",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A line hanging below a base — going down",
+      "exampleWords": [
+        {
+          "word": "地下",
+          "romaji": "chika",
+          "meaning": "underground"
+        },
+        {
+          "word": "下手",
+          "romaji": "heta",
+          "meaning": "unskilled / bad at"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5de6",
+      "set": "Kanji",
+      "glyph": "左",
+      "readings": [
+        "さ",
+        "ひだり"
+      ],
+      "meaning": "left",
+      "unicode": "05DE6",
+      "strokeCount": 5,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A left hand holding a tool — 'la-bor with left hand'",
+      "exampleWords": [
+        {
+          "word": "左手",
+          "romaji": "hidarite",
+          "meaning": "left hand"
+        },
+        {
+          "word": "左折",
+          "romaji": "sasetsu",
+          "meaning": "left turn"
+        }
+      ]
+    },
+    {
+      "id": "kanji-53f3",
+      "set": "Kanji",
+      "glyph": "右",
+      "readings": [
+        "う",
+        "ゆう",
+        "みぎ"
+      ],
+      "meaning": "right",
+      "unicode": "053F3",
+      "strokeCount": 5,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A right hand holding something to the mouth",
+      "exampleWords": [
+        {
+          "word": "右手",
+          "romaji": "migite",
+          "meaning": "right hand"
+        },
+        {
+          "word": "右折",
+          "romaji": "usetsu",
+          "meaning": "right turn"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4e2d",
+      "set": "Kanji",
+      "glyph": "中",
+      "readings": [
+        "ちゅう",
+        "なか"
+      ],
+      "meaning": "middle / inside",
+      "unicode": "04E2D",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A line piercing through the center of a box",
+      "exampleWords": [
+        {
+          "word": "中国",
+          "romaji": "Chuugoku",
+          "meaning": "China"
+        },
+        {
+          "word": "中学校",
+          "romaji": "chuugakkou",
+          "meaning": "middle school"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5927",
+      "set": "Kanji",
+      "glyph": "大",
+      "readings": [
+        "だい",
+        "たい",
+        "おお"
+      ],
+      "meaning": "big / large",
+      "unicode": "05927",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person (人) stretching their arms wide — 'big!'",
+      "exampleWords": [
+        {
+          "word": "大学",
+          "romaji": "daigaku",
+          "meaning": "university"
+        },
+        {
+          "word": "大丈夫",
+          "romaji": "daijoubu",
+          "meaning": "okay / alright"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5c0f",
+      "set": "Kanji",
+      "glyph": "小",
+      "readings": [
+        "しょう",
+        "こ",
+        "ちい"
+      ],
+      "meaning": "small / little",
+      "unicode": "05C0F",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A tiny person with arms close to the body — small",
+      "exampleWords": [
+        {
+          "word": "小学校",
+          "romaji": "shougakkou",
+          "meaning": "elementary school"
+        },
+        {
+          "word": "小説",
+          "romaji": "shousetsu",
+          "meaning": "novel"
+        }
+      ]
+    },
+    {
+      "id": "kanji-672c",
+      "set": "Kanji",
+      "glyph": "本",
+      "readings": [
+        "ほん",
+        "もと"
+      ],
+      "meaning": "book / origin",
+      "unicode": "0672C",
+      "strokeCount": 5,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A tree (木) with a mark at the roots — the origin, the base",
+      "exampleWords": [
+        {
+          "word": "日本語",
+          "romaji": "Nihongo",
+          "meaning": "Japanese language"
+        },
+        {
+          "word": "本当",
+          "romaji": "hontou",
+          "meaning": "really / truly"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5148",
+      "set": "Kanji",
+      "glyph": "先",
+      "readings": [
+        "せん",
+        "さき"
+      ],
+      "meaning": "ahead / first",
+      "unicode": "05148",
+      "strokeCount": 6,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person (人) stepping ahead with their leg",
+      "exampleWords": [
+        {
+          "word": "先生",
+          "romaji": "sensei",
+          "meaning": "teacher"
+        },
+        {
+          "word": "先週",
+          "romaji": "senshuu",
+          "meaning": "last week"
+        }
+      ]
+    },
+    {
+      "id": "kanji-751f",
+      "set": "Kanji",
+      "glyph": "生",
+      "readings": [
+        "せい",
+        "しょう",
+        "い"
+      ],
+      "meaning": "life / birth",
+      "unicode": "0751F",
+      "strokeCount": 5,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A plant (木) growing from the ground — new life",
+      "exampleWords": [
+        {
+          "word": "学生",
+          "romaji": "gakusei",
+          "meaning": "student"
+        },
+        {
+          "word": "先生",
+          "romaji": "sensei",
+          "meaning": "teacher"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5b66",
+      "set": "Kanji",
+      "glyph": "学",
+      "readings": [
+        "がく",
+        "まな"
+      ],
+      "meaning": "study / learn",
+      "unicode": "05B66",
+      "strokeCount": 8,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Hands over a child (子) — teaching a child",
+      "exampleWords": [
+        {
+          "word": "大学",
+          "romaji": "daigaku",
+          "meaning": "university"
+        },
+        {
+          "word": "学校",
+          "romaji": "gakkou",
+          "meaning": "school"
+        }
+      ]
+    },
+    {
+      "id": "kanji-6821",
+      "set": "Kanji",
+      "glyph": "校",
+      "readings": [
+        "こう"
+      ],
+      "meaning": "school",
+      "unicode": "06821",
+      "strokeCount": 10,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Tree (木) + cross (交) — where trees of knowledge cross",
+      "exampleWords": [
+        {
+          "word": "学校",
+          "romaji": "gakkou",
+          "meaning": "school"
+        },
+        {
+          "word": "高校",
+          "romaji": "koukou",
+          "meaning": "high school"
+        }
+      ]
+    },
+    {
+      "id": "kanji-56fd",
+      "set": "Kanji",
+      "glyph": "国",
+      "readings": [
+        "こく",
+        "くに"
+      ],
+      "meaning": "country",
+      "unicode": "056FD",
+      "strokeCount": 8,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Jewel (玉) inside a border (口) — a precious jewel of the country",
+      "exampleWords": [
+        {
+          "word": "外国",
+          "romaji": "gaikoku",
+          "meaning": "foreign country"
+        },
+        {
+          "word": "中国",
+          "romaji": "Chuugoku",
+          "meaning": "China"
+        }
+      ]
+    },
+    {
+      "id": "kanji-8a9e",
+      "set": "Kanji",
+      "glyph": "語",
+      "readings": [
+        "ご",
+        "かた"
+      ],
+      "meaning": "language / word",
+      "unicode": "08A9E",
+      "strokeCount": 14,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Words (言) + I/my (吾) — the language of me and mine",
+      "exampleWords": [
+        {
+          "word": "日本語",
+          "romaji": "Nihongo",
+          "meaning": "Japanese language"
+        },
+        {
+          "word": "英語",
+          "romaji": "Eigo",
+          "meaning": "English language"
+        }
+      ]
+    },
+    {
+      "id": "kanji-6771",
+      "set": "Kanji",
+      "glyph": "東",
+      "readings": [
+        "とう",
+        "ひがし"
+      ],
+      "meaning": "east",
+      "unicode": "06771",
+      "strokeCount": 8,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "The sun (日) rising through a tree (木) — the east at sunrise",
+      "exampleWords": [
+        {
+          "word": "東京",
+          "romaji": "Toukyou",
+          "meaning": "Tokyo"
+        },
+        {
+          "word": "東口",
+          "romaji": "higashiguchi",
+          "meaning": "east exit"
+        }
+      ]
+    },
+    {
+      "id": "kanji-897f",
+      "set": "Kanji",
+      "glyph": "西",
+      "readings": [
+        "せい",
+        "さい",
+        "にし"
+      ],
+      "meaning": "west",
+      "unicode": "0897F",
+      "strokeCount": 6,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A nest in a tree — birds nest in the west at sunset",
+      "exampleWords": [
+        {
+          "word": "西口",
+          "romaji": "nishiguchi",
+          "meaning": "west exit"
+        },
+        {
+          "word": "関西",
+          "romaji": "Kansai",
+          "meaning": "Kansai region"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5357",
+      "set": "Kanji",
+      "glyph": "南",
+      "readings": [
+        "なん",
+        "みなみ"
+      ],
+      "meaning": "south",
+      "unicode": "05357",
+      "strokeCount": 9,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A plant with a cap growing southward in warm sun",
+      "exampleWords": [
+        {
+          "word": "南口",
+          "romaji": "minamiguchi",
+          "meaning": "south exit"
+        },
+        {
+          "word": "南米",
+          "romaji": "Nanbei",
+          "meaning": "South America"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5317",
+      "set": "Kanji",
+      "glyph": "北",
+      "readings": [
+        "ほく",
+        "きた"
+      ],
+      "meaning": "north",
+      "unicode": "05317",
+      "strokeCount": 5,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Two people back-to-back — turning away from cold north",
+      "exampleWords": [
+        {
+          "word": "北口",
+          "romaji": "kitaguchi",
+          "meaning": "north exit"
+        },
+        {
+          "word": "北海道",
+          "romaji": "Hokkaidou",
+          "meaning": "Hokkaido"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5165",
+      "set": "Kanji",
+      "glyph": "入",
+      "readings": [
+        "にゅう",
+        "い",
+        "はい"
+      ],
+      "meaning": "enter",
+      "unicode": "05165",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An arrowhead pointing down — entering downward",
+      "exampleWords": [
+        {
+          "word": "入口",
+          "romaji": "iriguchi",
+          "meaning": "entrance"
+        },
+        {
+          "word": "入学",
+          "romaji": "nyuugaku",
+          "meaning": "school enrollment"
+        }
+      ]
+    },
+    {
+      "id": "kanji-51fa",
+      "set": "Kanji",
+      "glyph": "出",
+      "readings": [
+        "しゅつ",
+        "で"
+      ],
+      "meaning": "exit / come out",
+      "unicode": "051FA",
+      "strokeCount": 5,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Mountains (山) on mountains — shooting upward out",
+      "exampleWords": [
+        {
+          "word": "出口",
+          "romaji": "deguchi",
+          "meaning": "exit"
+        },
+        {
+          "word": "出発",
+          "romaji": "shuppatsu",
+          "meaning": "departure"
+        }
+      ]
+    },
+    {
+      "id": "kanji-898b",
+      "set": "Kanji",
+      "glyph": "見",
+      "readings": [
+        "けん",
+        "み"
+      ],
+      "meaning": "see / look",
+      "unicode": "0898B",
+      "strokeCount": 7,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An eye (目) on legs (儿) — an eye that walks and looks around",
+      "exampleWords": [
+        {
+          "word": "見る",
+          "romaji": "miru",
+          "meaning": "to see / watch"
+        },
+        {
+          "word": "見物",
+          "romaji": "kenbutsu",
+          "meaning": "sightseeing"
+        }
+      ]
+    },
+    {
+      "id": "kanji-8010",
+      "set": "Kanji",
+      "glyph": "聞",
+      "readings": [
+        "ぶん",
+        "もん",
+        "き"
+      ],
+      "meaning": "hear / ask",
+      "unicode": "08010",
+      "strokeCount": 14,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An ear (耳) inside a gate (門) — listening at the gate",
+      "exampleWords": [
+        {
+          "word": "聞く",
+          "romaji": "kiku",
+          "meaning": "to hear / ask"
+        },
+        {
+          "word": "新聞",
+          "romaji": "shinbun",
+          "meaning": "newspaper"
+        }
+      ]
+    },
+    {
+      "id": "kanji-8aad",
+      "set": "Kanji",
+      "glyph": "読",
+      "readings": [
+        "どく",
+        "とく",
+        "よ"
+      ],
+      "meaning": "read",
+      "unicode": "08AAD",
+      "strokeCount": 14,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Words (言) + sell (売) — reading the selling words",
+      "exampleWords": [
+        {
+          "word": "読む",
+          "romaji": "yomu",
+          "meaning": "to read"
+        },
+        {
+          "word": "読書",
+          "romaji": "dokusho",
+          "meaning": "reading (books)"
+        }
+      ]
+    },
+    {
+      "id": "kanji-66f8",
+      "set": "Kanji",
+      "glyph": "書",
+      "readings": [
+        "しょ",
+        "か"
+      ],
+      "meaning": "write",
+      "unicode": "066F8",
+      "strokeCount": 10,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A brush held by a hand, writing — scribe at work",
+      "exampleWords": [
+        {
+          "word": "書く",
+          "romaji": "kaku",
+          "meaning": "to write"
+        },
+        {
+          "word": "教科書",
+          "romaji": "kyoukasho",
+          "meaning": "textbook"
+        }
+      ]
+    },
+    {
+      "id": "kanji-8a71",
+      "set": "Kanji",
+      "glyph": "話",
+      "readings": [
+        "わ",
+        "はな"
+      ],
+      "meaning": "talk / story",
+      "unicode": "08A71",
+      "strokeCount": 13,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Words (言) + tongue (舌) — talking with tongue and words",
+      "exampleWords": [
+        {
+          "word": "話す",
+          "romaji": "hanasu",
+          "meaning": "to speak / talk"
+        },
+        {
+          "word": "電話",
+          "romaji": "denwa",
+          "meaning": "telephone"
+        }
+      ]
+    },
+    {
+      "id": "kanji-98df",
+      "set": "Kanji",
+      "glyph": "食",
+      "readings": [
+        "しょく",
+        "た",
+        "く"
+      ],
+      "meaning": "eat / food",
+      "unicode": "098DF",
+      "strokeCount": 9,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A lid (亼) over a container (良) — a lid on the food",
+      "exampleWords": [
+        {
+          "word": "食べる",
+          "romaji": "taberu",
+          "meaning": "to eat"
+        },
+        {
+          "word": "食事",
+          "romaji": "shokuji",
+          "meaning": "meal"
+        }
+      ]
+    },
+    {
+      "id": "kanji-98f2",
+      "set": "Kanji",
+      "glyph": "飲",
+      "readings": [
+        "いん",
+        "の"
+      ],
+      "meaning": "drink",
+      "unicode": "098F2",
+      "strokeCount": 12,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Food (食) + yawn/lack (欠) — missing food, so you drink",
+      "exampleWords": [
+        {
+          "word": "飲む",
+          "romaji": "nomu",
+          "meaning": "to drink"
+        },
+        {
+          "word": "飲み物",
+          "romaji": "nomimono",
+          "meaning": "beverage / drink"
+        }
+      ]
+    },
+    {
+      "id": "kanji-6765",
+      "set": "Kanji",
+      "glyph": "来",
+      "readings": [
+        "らい",
+        "く",
+        "き"
+      ],
+      "meaning": "come",
+      "unicode": "06765",
+      "strokeCount": 7,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person (人) on a tree (木) — 'come on down from the tree!'",
+      "exampleWords": [
+        {
+          "word": "来る",
+          "romaji": "kuru",
+          "meaning": "to come"
+        },
+        {
+          "word": "来週",
+          "romaji": "raishuu",
+          "meaning": "next week"
+        }
+      ]
+    },
+    {
+      "id": "kanji-884c",
+      "set": "Kanji",
+      "glyph": "行",
+      "readings": [
+        "こう",
+        "ぎょう",
+        "い"
+      ],
+      "meaning": "go",
+      "unicode": "0884C",
+      "strokeCount": 6,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A crossroads — you must choose which way to go",
+      "exampleWords": [
+        {
+          "word": "行く",
+          "romaji": "iku",
+          "meaning": "to go"
+        },
+        {
+          "word": "銀行",
+          "romaji": "ginkou",
+          "meaning": "bank"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5e30",
+      "set": "Kanji",
+      "glyph": "帰",
+      "readings": [
+        "き",
+        "かえ"
+      ],
+      "meaning": "return",
+      "unicode": "05E30",
+      "strokeCount": 10,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A broom and a person returning home to sweep",
+      "exampleWords": [
+        {
+          "word": "帰る",
+          "romaji": "kaeru",
+          "meaning": "to return home"
+        },
+        {
+          "word": "帰国",
+          "romaji": "kikoku",
+          "meaning": "return to one's country"
+        }
+      ]
+    },
+    {
+      "id": "kanji-767d",
+      "set": "Kanji",
+      "glyph": "白",
+      "readings": [
+        "はく",
+        "びゃく",
+        "しろ"
+      ],
+      "meaning": "white",
+      "unicode": "0767D",
+      "strokeCount": 5,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "The sun (日) with a ray on top — bright white light",
+      "exampleWords": [
+        {
+          "word": "白い",
+          "romaji": "shiroi",
+          "meaning": "white"
+        },
+        {
+          "word": "白米",
+          "romaji": "hakumai",
+          "meaning": "white rice"
+        }
+      ]
+    },
+    {
+      "id": "kanji-9ed2",
+      "set": "Kanji",
+      "glyph": "黒",
+      "readings": [
+        "こく",
+        "くろ"
+      ],
+      "meaning": "black",
+      "unicode": "09ED2",
+      "strokeCount": 11,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A field (里) on fire (火) — burnt black",
+      "exampleWords": [
+        {
+          "word": "黒い",
+          "romaji": "kuroi",
+          "meaning": "black"
+        },
+        {
+          "word": "黒板",
+          "romaji": "kokuban",
+          "meaning": "blackboard"
+        }
+      ]
+    },
+    {
+      "id": "kanji-8d64",
+      "set": "Kanji",
+      "glyph": "赤",
+      "readings": [
+        "せき",
+        "しゃく",
+        "あか"
+      ],
+      "meaning": "red",
+      "unicode": "08D64",
+      "strokeCount": 7,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Big (大) + fire (火) — a big fire is red",
+      "exampleWords": [
+        {
+          "word": "赤い",
+          "romaji": "akai",
+          "meaning": "red"
+        },
+        {
+          "word": "赤ちゃん",
+          "romaji": "akachan",
+          "meaning": "baby"
+        }
+      ]
+    },
+    {
+      "id": "kanji-9752",
+      "set": "Kanji",
+      "glyph": "青",
+      "readings": [
+        "せい",
+        "しょう",
+        "あお"
+      ],
+      "meaning": "blue / green",
+      "unicode": "09752",
+      "strokeCount": 8,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A plant growing (生) on the moon (月) — blue-green nature",
+      "exampleWords": [
+        {
+          "word": "青い",
+          "romaji": "aoi",
+          "meaning": "blue / green"
+        },
+        {
+          "word": "青春",
+          "romaji": "seishun",
+          "meaning": "youth / springtime of life"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4f55",
+      "set": "Kanji",
+      "glyph": "何",
+      "readings": [
+        "か",
+        "なに",
+        "なん"
+      ],
+      "meaning": "what",
+      "unicode": "04F55",
+      "strokeCount": 7,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person (人) carrying a question — 'what are you carrying?'",
+      "exampleWords": [
+        {
+          "word": "何時",
+          "romaji": "nanji",
+          "meaning": "what time?"
+        },
+        {
+          "word": "何語",
+          "romaji": "nanigo",
+          "meaning": "what language?"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4e0d",
+      "set": "Kanji",
+      "glyph": "不",
+      "readings": [
+        "ふ",
+        "ぶ"
+      ],
+      "meaning": "not / un-",
+      "unicode": "04E0D",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A bird that won't land (一) — refusing, 'not!'",
+      "exampleWords": [
+        {
+          "word": "不思議",
+          "romaji": "fushigi",
+          "meaning": "mysterious / strange"
+        },
+        {
+          "word": "不便",
+          "romaji": "fuben",
+          "meaning": "inconvenient"
+        }
+      ]
+    },
+    {
+      "id": "kanji-4eca",
+      "set": "Kanji",
+      "glyph": "今",
+      "readings": [
+        "こん",
+        "きん",
+        "いま"
+      ],
+      "meaning": "now",
+      "unicode": "04ECA",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A lid (亼) over people pressing down — now, this moment",
+      "exampleWords": [
+        {
+          "word": "今日",
+          "romaji": "kyou",
+          "meaning": "today"
+        },
+        {
+          "word": "今週",
+          "romaji": "konshuu",
+          "meaning": "this week"
+        }
+      ]
+    },
+    {
+      "id": "kanji-524d",
+      "set": "Kanji",
+      "glyph": "前",
+      "readings": [
+        "ぜん",
+        "まえ"
+      ],
+      "meaning": "before / front",
+      "unicode": "0524D",
+      "strokeCount": 9,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A boat (舟) and a knife (刀) — cutting the way in front",
+      "exampleWords": [
+        {
+          "word": "前",
+          "romaji": "mae",
+          "meaning": "front / before"
+        },
+        {
+          "word": "名前",
+          "romaji": "namae",
+          "meaning": "name"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5f8c",
+      "set": "Kanji",
+      "glyph": "後",
+      "readings": [
+        "ご",
+        "こう",
+        "うし"
+      ],
+      "meaning": "after / behind",
+      "unicode": "05F8C",
+      "strokeCount": 9,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Going (行) + tiny (幺) + follow — slow ones come after",
+      "exampleWords": [
+        {
+          "word": "午後",
+          "romaji": "gogo",
+          "meaning": "afternoon / PM"
+        },
+        {
+          "word": "後で",
+          "romaji": "ato de",
+          "meaning": "later"
+        }
+      ]
+    },
+    {
+      "id": "kanji-9577",
+      "set": "Kanji",
+      "glyph": "長",
+      "readings": [
+        "ちょう",
+        "なが"
+      ],
+      "meaning": "long / chief",
+      "unicode": "09577",
+      "strokeCount": 8,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person with long flowing hair — long and tall",
+      "exampleWords": [
+        {
+          "word": "長い",
+          "romaji": "nagai",
+          "meaning": "long"
+        },
+        {
+          "word": "社長",
+          "romaji": "shachou",
+          "meaning": "company president"
+        }
+      ]
+    },
+    {
+      "id": "kanji-9ad8",
+      "set": "Kanji",
+      "glyph": "高",
+      "readings": [
+        "こう",
+        "たか"
+      ],
+      "meaning": "high / tall",
+      "unicode": "09AD8",
+      "strokeCount": 10,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A tall tower with a roof — high up",
+      "exampleWords": [
+        {
+          "word": "高い",
+          "romaji": "takai",
+          "meaning": "high / expensive"
+        },
+        {
+          "word": "高校",
+          "romaji": "koukou",
+          "meaning": "high school"
+        }
+      ]
+    },
+    {
+      "id": "kanji-65b0",
+      "set": "Kanji",
+      "glyph": "新",
+      "readings": [
+        "しん",
+        "あたら"
+      ],
+      "meaning": "new",
+      "unicode": "065B0",
+      "strokeCount": 13,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Standing (立) + tree (木) + axe (斤) — freshly cut new wood",
+      "exampleWords": [
+        {
+          "word": "新しい",
+          "romaji": "atarashii",
+          "meaning": "new"
+        },
+        {
+          "word": "新幹線",
+          "romaji": "Shinkansen",
+          "meaning": "bullet train"
+        }
+      ]
+    },
+    {
+      "id": "kanji-53e4",
+      "set": "Kanji",
+      "glyph": "古",
+      "readings": [
+        "こ",
+        "ふる"
+      ],
+      "meaning": "old",
+      "unicode": "053E4",
+      "strokeCount": 5,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Ten (十) mouths (口) of oral history — ancient stories",
+      "exampleWords": [
+        {
+          "word": "古い",
+          "romaji": "furui",
+          "meaning": "old (things)"
+        },
+        {
+          "word": "古典",
+          "romaji": "koten",
+          "meaning": "classic / classical"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5916",
+      "set": "Kanji",
+      "glyph": "外",
+      "readings": [
+        "がい",
+        "げ",
+        "そと"
+      ],
+      "meaning": "outside",
+      "unicode": "05916",
+      "strokeCount": 5,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Evening (夕) with a divination mark (卜) — outside at dusk",
+      "exampleWords": [
+        {
+          "word": "外国",
+          "romaji": "gaikoku",
+          "meaning": "foreign country"
+        },
+        {
+          "word": "外出",
+          "romaji": "gaishutsu",
+          "meaning": "going out"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5185",
+      "set": "Kanji",
+      "glyph": "内",
+      "readings": [
+        "ない",
+        "だい",
+        "うち"
+      ],
+      "meaning": "inside",
+      "unicode": "05185",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person (人) inside a house frame (冂) — inside",
+      "exampleWords": [
+        {
+          "word": "案内",
+          "romaji": "annai",
+          "meaning": "guidance / information"
+        },
+        {
+          "word": "国内",
+          "romaji": "kokunai",
+          "meaning": "domestic / within the country"
+        }
+      ]
+    },
+    {
+      "id": "kanji-6c17",
+      "set": "Kanji",
+      "glyph": "気",
+      "readings": [
+        "き",
+        "け"
+      ],
+      "meaning": "spirit / energy",
+      "unicode": "06C17",
+      "strokeCount": 6,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Steam rising from rice (米) — life energy, atmosphere",
+      "exampleWords": [
+        {
+          "word": "天気",
+          "romaji": "tenki",
+          "meaning": "weather"
+        },
+        {
+          "word": "元気",
+          "romaji": "genki",
+          "meaning": "healthy / energetic"
+        }
+      ]
+    },
+    {
+      "id": "kanji-5929",
+      "set": "Kanji",
+      "glyph": "天",
+      "readings": [
+        "てん",
+        "あめ",
+        "あま"
+      ],
+      "meaning": "heaven / sky",
+      "unicode": "05929",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A big person (大) with a line above their head — the sky above",
+      "exampleWords": [
+        {
+          "word": "天気",
+          "romaji": "tenki",
+          "meaning": "weather"
+        },
+        {
+          "word": "天国",
+          "romaji": "tengoku",
+          "meaning": "heaven / paradise"
+        }
+      ]
+    },
+    {
+      "id": "kanji-96e8",
+      "set": "Kanji",
+      "glyph": "雨",
+      "readings": [
+        "う",
+        "あめ"
+      ],
+      "meaning": "rain",
+      "unicode": "096E8",
+      "strokeCount": 8,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A sky (一) with a cloud frame and raindrops falling",
+      "exampleWords": [
+        {
+          "word": "雨天",
+          "romaji": "uten",
+          "meaning": "rainy weather"
+        },
+        {
+          "word": "大雨",
+          "romaji": "oame",
+          "meaning": "heavy rain"
+        }
+      ]
+    }
+  ]
+}

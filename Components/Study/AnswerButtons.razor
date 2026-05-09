@@ -1,0 +1,23 @@
+<div class="answer-buttons">
+    <button class="answer-btn btn-again" @onclick="() => Answer(SrsQuality.Blackout)">
+        <span class="btn-label">Again</span>
+        <span class="btn-hint">forgot</span>
+    </button>
+    <button class="answer-btn btn-hard" @onclick="() => Answer(SrsQuality.Hard)">
+        <span class="btn-label">Hard</span>
+        <span class="btn-hint">struggled</span>
+    </button>
+    <button class="answer-btn btn-good" @onclick="() => Answer(SrsQuality.Good)">
+        <span class="btn-label">Good</span>
+        <span class="btn-hint">got it</span>
+    </button>
+    <button class="answer-btn btn-easy" @onclick="() => Answer(SrsQuality.Perfect)">
+        <span class="btn-label">Easy</span>
+        <span class="btn-hint">instant</span>
+    </button>
+</div>
+
+@code {
+    [Parameter] public EventCallback<SrsQuality> OnAnswer { get; set; }
+    private async Task Answer(SrsQuality q) => await OnAnswer.InvokeAsync(q);
+}

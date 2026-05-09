@@ -1,0 +1,12 @@
+<div class="progress-bar-wrap">
+    <div class="progress-bar-track">
+        <div class="progress-bar-fill" style="width: @Percent%"></div>
+    </div>
+    <span class="progress-label">@Current / @Total</span>
+</div>
+
+@code {
+    [Parameter] public int Current { get; set; }
+    [Parameter] public int Total { get; set; }
+    private double Percent => Total == 0 ? 0 : (double)Current / Total * 100;
+}

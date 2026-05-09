@@ -1,0 +1,50 @@
+<div class="flashcard @(IsFlipped ? "flipped" : "")" @onclick="Flip">
+    <div class="flashcard-inner">
+        <div class="flashcard-front">
+            <div class="flashcard-glyph">@Character?.Glyph</div>
+            <div class="tap-hint">tap to reveal</div>
+        </div>
+        <div class="flashcard-back">
+            <div class="flashcard-glyph small">@Character?.Glyph</div>
+            <div class="flashcard-readings">
+                @if (Character?.Readings is { } readings)
+                {
+                    @string.Join(" · ", readings)
+                }
+            </div>
+            @if (!string.IsNullOrEmpty(Character?.Meaning))
+            {
+                <div class="flashcard-meaning">@Character.Meaning</div>
+            }
+            @if (Character?.ExampleWords is { Length: > 0 } examples)
+            {
+                <div class="flashcard-examples">
+                    @foreach (var ex in examples)
+                    {
+                        <div class="example-word">
+                            <span class="ex-word">@ex.Word</span>
+                            <span class="ex-romaji">@ex.Romaji</span>
+                            <span class="ex-meaning">@ex.Meaning</span>
+                        </div>
+                    }
+                </div>
+            }
+            @if (!string.IsNullOrEmpty(Character?.MnemonicHint))
+            {
+                <div class="flashcard-mnemonic">💡 @Character.MnemonicHint</div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public Character? Character { get; set; }
+    [Parameter] public bool IsFlipped { get; set; }
+    [Parameter] public EventCallback OnFlip { get; set; }
+
+    private async Task Flip()
+    {
+        if (!IsFlipped)
+            await OnFlip.InvokeAsync();
+    }
+}

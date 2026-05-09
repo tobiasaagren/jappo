@@ -1,0 +1,86 @@
+@inject HttpClient Http
+
+<div class="stroke-player">
+    @if (_loading)
+    {
+        <div class="stroke-loading">Loading…</div>
+    }
+    else if (!string.IsNullOrEmpty(_svgMarkup))
+    {
+        <div class="stroke-svg-wrap @(_playing ? "playing" : "")" @key="_svgKey">
+            @((MarkupString)_svgMarkup)
+        </div>
+        <div class="stroke-controls">
+            <button class="stroke-btn" @onclick="Play" disabled="@_playing">▶ Play</button>
+            <button class="stroke-btn" @onclick="Reset">↺ Reset</button>
+            <span class="stroke-count">@Character?.StrokeCount strokes</span>
+        </div>
+    }
+    else
+    {
+        <div class="stroke-fallback">
+            <div class="stroke-glyph-big">@Character?.Glyph</div>
+            <div class="stroke-count-note">@Character?.StrokeCount strokes</div>
+            <div class="stroke-unavailable">Stroke animation not available for this character.</div>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public Character? Character { get; set; }
+
+    private string _svgMarkup = "";
+    private bool _loading;
+    private bool _playing;
+    private int _svgKey;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Character is null) return;
+        _svgMarkup = "";
+        _playing = false;
+        _svgKey++;
+
+        if (!Character.HasStrokeSvg) return;
+
+        _loading = true;
+        try
+        {
+            var svg = await Http.GetStringAsync($"data/svg/{Character.Unicode.ToLower()}.svg");
+            _svgMarkup = InjectAnimationClasses(svg);
+        }
+        catch
+        {
+            _svgMarkup = "";
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+
+    private async Task Play()
+    {
+        _playing = true;
+        StateHasChanged();
+        // Reset and re-trigger: bump key to force DOM re-creation + CSS animation restart
+        await Task.Delay(50);
+        _svgKey++;
+        _playing = true;
+    }
+
+    private void Reset()
+    {
+        _playing = false;
+        _svgKey++;
+    }
+
+    private static string InjectAnimationClasses(string svg)
+    {
+        // Add pathLength="1000" and class="stroke" to every <path> element
+        return System.Text.RegularExpressions.Regex.Replace(
+            svg,
+            @"<path\b",
+            "<path pathLength=\"1000\" class=\"stroke\"");
+    }
+}

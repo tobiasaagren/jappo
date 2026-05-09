@@ -1,0 +1,1118 @@
+{
+  "version": 1,
+  "set": "Hiragana",
+  "characters": [
+    {
+      "id": "hira-a",
+      "set": "Hiragana",
+      "glyph": "あ",
+      "readings": [
+        "a"
+      ],
+      "unicode": "03042",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person sitting cross-legged saying 'ahh'",
+      "exampleWords": [
+        {
+          "word": "あり",
+          "romaji": "ari",
+          "meaning": "ant"
+        },
+        {
+          "word": "あお",
+          "romaji": "ao",
+          "meaning": "blue"
+        }
+      ]
+    },
+    {
+      "id": "hira-i",
+      "set": "Hiragana",
+      "glyph": "い",
+      "readings": [
+        "i"
+      ],
+      "unicode": "03044",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Two eels swimming side by side",
+      "exampleWords": [
+        {
+          "word": "いぬ",
+          "romaji": "inu",
+          "meaning": "dog"
+        },
+        {
+          "word": "いえ",
+          "romaji": "ie",
+          "meaning": "house"
+        }
+      ]
+    },
+    {
+      "id": "hira-u",
+      "set": "Hiragana",
+      "glyph": "う",
+      "readings": [
+        "u"
+      ],
+      "unicode": "03046",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A hook dangling — fishing for 'u'",
+      "exampleWords": [
+        {
+          "word": "うみ",
+          "romaji": "umi",
+          "meaning": "sea"
+        },
+        {
+          "word": "うた",
+          "romaji": "uta",
+          "meaning": "song"
+        }
+      ]
+    },
+    {
+      "id": "hira-e",
+      "set": "Hiragana",
+      "glyph": "え",
+      "readings": [
+        "e"
+      ],
+      "unicode": "03048",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Someone shrugging and saying 'eh?'",
+      "exampleWords": [
+        {
+          "word": "えき",
+          "romaji": "eki",
+          "meaning": "station"
+        },
+        {
+          "word": "えん",
+          "romaji": "en",
+          "meaning": "yen / circle"
+        }
+      ]
+    },
+    {
+      "id": "hira-o",
+      "set": "Hiragana",
+      "glyph": "お",
+      "readings": [
+        "o"
+      ],
+      "unicode": "0304A",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An octopus with its arms spread",
+      "exampleWords": [
+        {
+          "word": "おに",
+          "romaji": "oni",
+          "meaning": "demon / ogre"
+        },
+        {
+          "word": "おかね",
+          "romaji": "okane",
+          "meaning": "money"
+        }
+      ]
+    },
+    {
+      "id": "hira-ka",
+      "set": "Hiragana",
+      "glyph": "か",
+      "readings": [
+        "ka"
+      ],
+      "unicode": "0304B",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A cartoon car zooming by — 'ka-zoom'",
+      "exampleWords": [
+        {
+          "word": "かわ",
+          "romaji": "kawa",
+          "meaning": "river"
+        },
+        {
+          "word": "かさ",
+          "romaji": "kasa",
+          "meaning": "umbrella"
+        }
+      ]
+    },
+    {
+      "id": "hira-ki",
+      "set": "Hiragana",
+      "glyph": "き",
+      "readings": [
+        "ki"
+      ],
+      "unicode": "0304D",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A key — 'ki' sounds like 'key'",
+      "exampleWords": [
+        {
+          "word": "きつね",
+          "romaji": "kitsune",
+          "meaning": "fox"
+        },
+        {
+          "word": "きのこ",
+          "romaji": "kinoko",
+          "meaning": "mushroom"
+        }
+      ]
+    },
+    {
+      "id": "hira-ku",
+      "set": "Hiragana",
+      "glyph": "く",
+      "readings": [
+        "ku"
+      ],
+      "unicode": "0304F",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A bird's open beak saying 'coo'",
+      "exampleWords": [
+        {
+          "word": "くも",
+          "romaji": "kumo",
+          "meaning": "cloud / spider"
+        },
+        {
+          "word": "くつ",
+          "romaji": "kutsu",
+          "meaning": "shoes"
+        }
+      ]
+    },
+    {
+      "id": "hira-ke",
+      "set": "Hiragana",
+      "glyph": "け",
+      "readings": [
+        "ke"
+      ],
+      "unicode": "03051",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Looks like a 'K' — 'ke' for the letter K",
+      "exampleWords": [
+        {
+          "word": "けむり",
+          "romaji": "kemuri",
+          "meaning": "smoke"
+        },
+        {
+          "word": "けさ",
+          "romaji": "kesa",
+          "meaning": "this morning"
+        }
+      ]
+    },
+    {
+      "id": "hira-ko",
+      "set": "Hiragana",
+      "glyph": "こ",
+      "readings": [
+        "ko"
+      ],
+      "unicode": "03053",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Two planks stacked — looks like a couch",
+      "exampleWords": [
+        {
+          "word": "こえ",
+          "romaji": "koe",
+          "meaning": "voice"
+        },
+        {
+          "word": "こども",
+          "romaji": "kodomo",
+          "meaning": "child"
+        }
+      ]
+    },
+    {
+      "id": "hira-sa",
+      "set": "Hiragana",
+      "glyph": "さ",
+      "readings": [
+        "sa"
+      ],
+      "unicode": "03055",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person doing a salsa dance",
+      "exampleWords": [
+        {
+          "word": "さくら",
+          "romaji": "sakura",
+          "meaning": "cherry blossom"
+        },
+        {
+          "word": "さかな",
+          "romaji": "sakana",
+          "meaning": "fish"
+        }
+      ]
+    },
+    {
+      "id": "hira-shi",
+      "set": "Hiragana",
+      "glyph": "し",
+      "readings": [
+        "shi",
+        "si"
+      ],
+      "unicode": "03057",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A fishing hook — 'she' caught a fish",
+      "exampleWords": [
+        {
+          "word": "しろ",
+          "romaji": "shiro",
+          "meaning": "white / castle"
+        },
+        {
+          "word": "しお",
+          "romaji": "shio",
+          "meaning": "salt"
+        }
+      ]
+    },
+    {
+      "id": "hira-su",
+      "set": "Hiragana",
+      "glyph": "す",
+      "readings": [
+        "su"
+      ],
+      "unicode": "03059",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A snail in a 'suit' — spiral shell on top",
+      "exampleWords": [
+        {
+          "word": "すし",
+          "romaji": "sushi",
+          "meaning": "sushi"
+        },
+        {
+          "word": "すな",
+          "romaji": "suna",
+          "meaning": "sand"
+        }
+      ]
+    },
+    {
+      "id": "hira-se",
+      "set": "Hiragana",
+      "glyph": "せ",
+      "readings": [
+        "se"
+      ],
+      "unicode": "0305B",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Looks like someone saying 'say!' with raised hand",
+      "exampleWords": [
+        {
+          "word": "せかい",
+          "romaji": "sekai",
+          "meaning": "world"
+        },
+        {
+          "word": "せんせい",
+          "romaji": "sensei",
+          "meaning": "teacher"
+        }
+      ]
+    },
+    {
+      "id": "hira-so",
+      "set": "Hiragana",
+      "glyph": "そ",
+      "readings": [
+        "so"
+      ],
+      "unicode": "0305D",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Looks like '50' — 'so' many things",
+      "exampleWords": [
+        {
+          "word": "そら",
+          "romaji": "sora",
+          "meaning": "sky"
+        },
+        {
+          "word": "そと",
+          "romaji": "soto",
+          "meaning": "outside"
+        }
+      ]
+    },
+    {
+      "id": "hira-ta",
+      "set": "Hiragana",
+      "glyph": "た",
+      "readings": [
+        "ta"
+      ],
+      "unicode": "0305F",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A person at a table — 'ta-ble'",
+      "exampleWords": [
+        {
+          "word": "たまご",
+          "romaji": "tamago",
+          "meaning": "egg"
+        },
+        {
+          "word": "たこ",
+          "romaji": "tako",
+          "meaning": "octopus / kite"
+        }
+      ]
+    },
+    {
+      "id": "hira-chi",
+      "set": "Hiragana",
+      "glyph": "ち",
+      "readings": [
+        "chi",
+        "ti"
+      ],
+      "unicode": "03061",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Like a '7' hooked — a cheerful 'chi!'",
+      "exampleWords": [
+        {
+          "word": "ちず",
+          "romaji": "chizu",
+          "meaning": "map"
+        },
+        {
+          "word": "ちち",
+          "romaji": "chichi",
+          "meaning": "father / milk"
+        }
+      ]
+    },
+    {
+      "id": "hira-tsu",
+      "set": "Hiragana",
+      "glyph": "つ",
+      "readings": [
+        "tsu",
+        "tu"
+      ],
+      "unicode": "03064",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A tsunami wave cresting — 'tsu-nami'",
+      "exampleWords": [
+        {
+          "word": "つき",
+          "romaji": "tsuki",
+          "meaning": "moon / month"
+        },
+        {
+          "word": "つくえ",
+          "romaji": "tsukue",
+          "meaning": "desk"
+        }
+      ]
+    },
+    {
+      "id": "hira-te",
+      "set": "Hiragana",
+      "glyph": "て",
+      "readings": [
+        "te"
+      ],
+      "unicode": "03066",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A hand waving — 'te' means hand",
+      "exampleWords": [
+        {
+          "word": "てがみ",
+          "romaji": "tegami",
+          "meaning": "letter (mail)"
+        },
+        {
+          "word": "てんき",
+          "romaji": "tenki",
+          "meaning": "weather"
+        }
+      ]
+    },
+    {
+      "id": "hira-to",
+      "set": "Hiragana",
+      "glyph": "と",
+      "readings": [
+        "to"
+      ],
+      "unicode": "03068",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A tornado swirling — 'tor-nado'",
+      "exampleWords": [
+        {
+          "word": "とり",
+          "romaji": "tori",
+          "meaning": "bird"
+        },
+        {
+          "word": "とけい",
+          "romaji": "tokei",
+          "meaning": "clock / watch"
+        }
+      ]
+    },
+    {
+      "id": "hira-na",
+      "set": "Hiragana",
+      "glyph": "な",
+      "readings": [
+        "na"
+      ],
+      "unicode": "0306A",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A naughty child crossing their arms — 'na na na!'",
+      "exampleWords": [
+        {
+          "word": "なまえ",
+          "romaji": "namae",
+          "meaning": "name"
+        },
+        {
+          "word": "なつ",
+          "romaji": "natsu",
+          "meaning": "summer"
+        }
+      ]
+    },
+    {
+      "id": "hira-ni",
+      "set": "Hiragana",
+      "glyph": "に",
+      "readings": [
+        "ni"
+      ],
+      "unicode": "0306B",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Looks like a knee bending — 'knee'",
+      "exampleWords": [
+        {
+          "word": "にわ",
+          "romaji": "niwa",
+          "meaning": "garden"
+        },
+        {
+          "word": "にく",
+          "romaji": "niku",
+          "meaning": "meat"
+        }
+      ]
+    },
+    {
+      "id": "hira-nu",
+      "set": "Hiragana",
+      "glyph": "ぬ",
+      "readings": [
+        "nu"
+      ],
+      "unicode": "0306C",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Noodle — a tangled noodle on a plate",
+      "exampleWords": [
+        {
+          "word": "ぬの",
+          "romaji": "nuno",
+          "meaning": "cloth / fabric"
+        },
+        {
+          "word": "ぬりえ",
+          "romaji": "nurie",
+          "meaning": "coloring book"
+        }
+      ]
+    },
+    {
+      "id": "hira-ne",
+      "set": "Hiragana",
+      "glyph": "ね",
+      "readings": [
+        "ne"
+      ],
+      "unicode": "0306D",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A sleeping cat (ne = sleep in Japanese)",
+      "exampleWords": [
+        {
+          "word": "ねこ",
+          "romaji": "neko",
+          "meaning": "cat"
+        },
+        {
+          "word": "ねつ",
+          "romaji": "netsu",
+          "meaning": "fever / heat"
+        }
+      ]
+    },
+    {
+      "id": "hira-no",
+      "set": "Hiragana",
+      "glyph": "の",
+      "readings": [
+        "no"
+      ],
+      "unicode": "0306E",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A spinning top — 'no!' don't touch it",
+      "exampleWords": [
+        {
+          "word": "のり",
+          "romaji": "nori",
+          "meaning": "seaweed"
+        },
+        {
+          "word": "のみもの",
+          "romaji": "nomimono",
+          "meaning": "drink / beverage"
+        }
+      ]
+    },
+    {
+      "id": "hira-ha",
+      "set": "Hiragana",
+      "glyph": "は",
+      "readings": [
+        "ha",
+        "wa"
+      ],
+      "unicode": "0306F",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Someone laughing — 'ha ha ha!'",
+      "exampleWords": [
+        {
+          "word": "はな",
+          "romaji": "hana",
+          "meaning": "flower / nose"
+        },
+        {
+          "word": "はし",
+          "romaji": "hashi",
+          "meaning": "chopsticks / bridge"
+        }
+      ]
+    },
+    {
+      "id": "hira-hi",
+      "set": "Hiragana",
+      "glyph": "ひ",
+      "readings": [
+        "hi"
+      ],
+      "unicode": "03072",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A smiling face saying 'hee hee'",
+      "exampleWords": [
+        {
+          "word": "ひかり",
+          "romaji": "hikari",
+          "meaning": "light"
+        },
+        {
+          "word": "ひる",
+          "romaji": "hiru",
+          "meaning": "noon / daytime"
+        }
+      ]
+    },
+    {
+      "id": "hira-fu",
+      "set": "Hiragana",
+      "glyph": "ふ",
+      "readings": [
+        "fu",
+        "hu"
+      ],
+      "unicode": "03075",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Mount Fuji — 'fu-ji'",
+      "exampleWords": [
+        {
+          "word": "ふね",
+          "romaji": "fune",
+          "meaning": "boat / ship"
+        },
+        {
+          "word": "ふゆ",
+          "romaji": "fuyu",
+          "meaning": "winter"
+        }
+      ]
+    },
+    {
+      "id": "hira-he",
+      "set": "Hiragana",
+      "glyph": "へ",
+      "readings": [
+        "he",
+        "e"
+      ],
+      "unicode": "03078",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A mountain peak — 'hey, look at the peak!'",
+      "exampleWords": [
+        {
+          "word": "へや",
+          "romaji": "heya",
+          "meaning": "room"
+        },
+        {
+          "word": "へび",
+          "romaji": "hebi",
+          "meaning": "snake"
+        }
+      ]
+    },
+    {
+      "id": "hira-ho",
+      "set": "Hiragana",
+      "glyph": "ほ",
+      "readings": [
+        "ho"
+      ],
+      "unicode": "0307B",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Santa Claus — 'ho ho ho!'",
+      "exampleWords": [
+        {
+          "word": "ほし",
+          "romaji": "hoshi",
+          "meaning": "star"
+        },
+        {
+          "word": "ほん",
+          "romaji": "hon",
+          "meaning": "book"
+        }
+      ]
+    },
+    {
+      "id": "hira-ma",
+      "set": "Hiragana",
+      "glyph": "ま",
+      "readings": [
+        "ma"
+      ],
+      "unicode": "0307E",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A mama hugging her children",
+      "exampleWords": [
+        {
+          "word": "まど",
+          "romaji": "mado",
+          "meaning": "window"
+        },
+        {
+          "word": "まち",
+          "romaji": "machi",
+          "meaning": "town / city"
+        }
+      ]
+    },
+    {
+      "id": "hira-mi",
+      "set": "Hiragana",
+      "glyph": "み",
+      "readings": [
+        "mi"
+      ],
+      "unicode": "0307F",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Looking in a mirror — 'me!' (mi = look)",
+      "exampleWords": [
+        {
+          "word": "みず",
+          "romaji": "mizu",
+          "meaning": "water"
+        },
+        {
+          "word": "みち",
+          "romaji": "michi",
+          "meaning": "road / path"
+        }
+      ]
+    },
+    {
+      "id": "hira-mu",
+      "set": "Hiragana",
+      "glyph": "む",
+      "readings": [
+        "mu"
+      ],
+      "unicode": "03080",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A cow mooing — 'moo!'",
+      "exampleWords": [
+        {
+          "word": "むし",
+          "romaji": "mushi",
+          "meaning": "insect / bug"
+        },
+        {
+          "word": "むら",
+          "romaji": "mura",
+          "meaning": "village"
+        }
+      ]
+    },
+    {
+      "id": "hira-me",
+      "set": "Hiragana",
+      "glyph": "め",
+      "readings": [
+        "me"
+      ],
+      "unicode": "03081",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An eye — 'me' means eye in Japanese",
+      "exampleWords": [
+        {
+          "word": "めがね",
+          "romaji": "megane",
+          "meaning": "glasses / spectacles"
+        },
+        {
+          "word": "めだか",
+          "romaji": "medaka",
+          "meaning": "killifish"
+        }
+      ]
+    },
+    {
+      "id": "hira-mo",
+      "set": "Hiragana",
+      "glyph": "も",
+      "readings": [
+        "mo"
+      ],
+      "unicode": "03082",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "More hooks — 'mo-re and more'",
+      "exampleWords": [
+        {
+          "word": "もり",
+          "romaji": "mori",
+          "meaning": "forest"
+        },
+        {
+          "word": "もも",
+          "romaji": "momo",
+          "meaning": "peach"
+        }
+      ]
+    },
+    {
+      "id": "hira-ya",
+      "set": "Hiragana",
+      "glyph": "や",
+      "readings": [
+        "ya"
+      ],
+      "unicode": "03084",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A yak with big horns — 'ya-k'",
+      "exampleWords": [
+        {
+          "word": "やま",
+          "romaji": "yama",
+          "meaning": "mountain"
+        },
+        {
+          "word": "やすみ",
+          "romaji": "yasumi",
+          "meaning": "rest / holiday"
+        }
+      ]
+    },
+    {
+      "id": "hira-yu",
+      "set": "Hiragana",
+      "glyph": "ゆ",
+      "readings": [
+        "yu"
+      ],
+      "unicode": "03086",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A fish and hook — 'you caught it!'",
+      "exampleWords": [
+        {
+          "word": "ゆき",
+          "romaji": "yuki",
+          "meaning": "snow"
+        },
+        {
+          "word": "ゆめ",
+          "romaji": "yume",
+          "meaning": "dream"
+        }
+      ]
+    },
+    {
+      "id": "hira-yo",
+      "set": "Hiragana",
+      "glyph": "よ",
+      "readings": [
+        "yo"
+      ],
+      "unicode": "03088",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A yo-yo on a string — 'yo-yo'",
+      "exampleWords": [
+        {
+          "word": "よる",
+          "romaji": "yoru",
+          "meaning": "night / evening"
+        },
+        {
+          "word": "よみかた",
+          "romaji": "yomikata",
+          "meaning": "way of reading"
+        }
+      ]
+    },
+    {
+      "id": "hira-ra",
+      "set": "Hiragana",
+      "glyph": "ら",
+      "readings": [
+        "ra"
+      ],
+      "unicode": "03089",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A ladle — 'ra-dle'",
+      "exampleWords": [
+        {
+          "word": "らいねん",
+          "romaji": "rainen",
+          "meaning": "next year"
+        },
+        {
+          "word": "らく",
+          "romaji": "raku",
+          "meaning": "comfortable / easy"
+        }
+      ]
+    },
+    {
+      "id": "hira-ri",
+      "set": "Hiragana",
+      "glyph": "り",
+      "readings": [
+        "ri"
+      ],
+      "unicode": "0308A",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Two reeds leaning — 'ree'",
+      "exampleWords": [
+        {
+          "word": "りんご",
+          "romaji": "ringo",
+          "meaning": "apple"
+        },
+        {
+          "word": "りょこう",
+          "romaji": "ryokou",
+          "meaning": "travel / trip"
+        }
+      ]
+    },
+    {
+      "id": "hira-ru",
+      "set": "Hiragana",
+      "glyph": "る",
+      "readings": [
+        "ru"
+      ],
+      "unicode": "0308B",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A kangaroo leaping — 'roo'",
+      "exampleWords": [
+        {
+          "word": "るすばん",
+          "romaji": "rusuban",
+          "meaning": "watching the house"
+        },
+        {
+          "word": "きる",
+          "romaji": "kiru",
+          "meaning": "to wear / to cut"
+        }
+      ]
+    },
+    {
+      "id": "hira-re",
+      "set": "Hiragana",
+      "glyph": "れ",
+      "readings": [
+        "re"
+      ],
+      "unicode": "0308C",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A road with a bend — 're-route'",
+      "exampleWords": [
+        {
+          "word": "れきし",
+          "romaji": "rekishi",
+          "meaning": "history"
+        },
+        {
+          "word": "れんしゅう",
+          "romaji": "renshuu",
+          "meaning": "practice"
+        }
+      ]
+    },
+    {
+      "id": "hira-ro",
+      "set": "Hiragana",
+      "glyph": "ろ",
+      "readings": [
+        "ro"
+      ],
+      "unicode": "0308D",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A road winding around a corner",
+      "exampleWords": [
+        {
+          "word": "ろうか",
+          "romaji": "rouka",
+          "meaning": "hallway / corridor"
+        },
+        {
+          "word": "ろうそく",
+          "romaji": "rousoku",
+          "meaning": "candle"
+        }
+      ]
+    },
+    {
+      "id": "hira-wa",
+      "set": "Hiragana",
+      "glyph": "わ",
+      "readings": [
+        "wa"
+      ],
+      "unicode": "0308F",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A wine glass — 'wa-ine'",
+      "exampleWords": [
+        {
+          "word": "わたし",
+          "romaji": "watashi",
+          "meaning": "I / me"
+        },
+        {
+          "word": "わかい",
+          "romaji": "wakai",
+          "meaning": "young"
+        }
+      ]
+    },
+    {
+      "id": "hira-wo",
+      "set": "Hiragana",
+      "glyph": "を",
+      "readings": [
+        "wo",
+        "o"
+      ],
+      "unicode": "03092",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Used as a particle — 'wo-rk that object!'",
+      "exampleWords": [
+        {
+          "word": "ほんをよむ",
+          "romaji": "hon wo yomu",
+          "meaning": "to read a book (を = object marker)"
+        },
+        {
+          "word": "みずをのむ",
+          "romaji": "mizu wo nomu",
+          "meaning": "to drink water"
+        }
+      ]
+    },
+    {
+      "id": "hira-n",
+      "set": "Hiragana",
+      "glyph": "ん",
+      "readings": [
+        "n",
+        "m"
+      ],
+      "unicode": "03093",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Like a cursive 'n' — the only standalone consonant",
+      "exampleWords": [
+        {
+          "word": "にほん",
+          "romaji": "nihon",
+          "meaning": "Japan"
+        },
+        {
+          "word": "ほん",
+          "romaji": "hon",
+          "meaning": "book"
+        }
+      ]
+    }
+  ]
+}

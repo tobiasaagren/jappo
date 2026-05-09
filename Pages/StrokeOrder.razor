@@ -1,0 +1,64 @@
+@page "/stroke-order"
+@inject ICharacterRepository Repo
+
+<PageTitle>Stroke Order — Jappo</PageTitle>
+
+<div class="page-stroke">
+    <h1>Stroke Order</h1>
+    <p class="page-desc">Browse stroke order for each character. Click a character to view it.</p>
+
+    <DeckSelector @bind-SelectedSets="_selectedSets" />
+
+    <div class="stroke-browser">
+        <div class="stroke-list">
+            @foreach (var ch in CurrentChars)
+            {
+                <button class="stroke-thumb @(_selected?.Id == ch.Id ? "active" : "")"
+                        @onclick="() => _selected = ch">
+                    @ch.Glyph
+                </button>
+            }
+        </div>
+
+        <div class="stroke-detail">
+            @if (_selected is not null)
+            {
+                <div class="stroke-detail-header">
+                    <span class="stroke-detail-glyph">@_selected.Glyph</span>
+                    <div class="stroke-detail-info">
+                        <div class="stroke-detail-readings">@string.Join(" · ", _selected.Readings)</div>
+                        @if (!string.IsNullOrEmpty(_selected.Meaning))
+                        {
+                            <div class="stroke-detail-meaning">@_selected.Meaning</div>
+                        }
+                        <div class="stroke-detail-count">@_selected.StrokeCount strokes</div>
+                    </div>
+                </div>
+
+                <StrokeOrderPlayer Character="_selected" />
+
+                @if (!string.IsNullOrEmpty(_selected.MnemonicHint))
+                {
+                    <div class="stroke-mnemonic">💡 @_selected.MnemonicHint</div>
+                }
+            }
+            else
+            {
+                <div class="stroke-placeholder">← Select a character</div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<CharacterSet> _selectedSets = [CharacterSet.Hiragana];
+    private Character? _selected;
+
+    private IEnumerable<Character> CurrentChars =>
+        _selectedSets.SelectMany(s => Repo.GetBySet(s));
+
+    protected override void OnParametersSet()
+    {
+        _selected = null;
+    }
+}

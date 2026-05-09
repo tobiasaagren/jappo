@@ -1,0 +1,14 @@
+<div class="character-card @SizeClass">
+    <div class="char-glyph">@Character?.Glyph</div>
+    @if (ShowSet)
+    {
+        <div class="char-set-badge">@Character?.Set</div>
+    }
+</div>
+
+@code {
+    [Parameter] public Character? Character { get; set; }
+    [Parameter] public bool ShowSet { get; set; }
+    [Parameter] public string Size { get; set; } = "large"; // large | medium | small
+    private string SizeClass => $"char-size-{Size}";
+}

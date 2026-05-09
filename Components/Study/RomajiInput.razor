@@ -1,0 +1,87 @@
+@inject IJSRuntime JS
+
+<div class="romaji-input-wrap">
+    <div class="romaji-prompt">Type the reading:</div>
+    <input class="romaji-input @StateClass"
+           type="text"
+           placeholder="romaji..."
+           @bind="_input"
+           @bind:event="oninput"
+           @onkeydown="OnKeyDown"
+           disabled="@_answered"
+           @ref="_inputRef" />
+
+    @if (_answered)
+    {
+        <div class="romaji-result @(_correct ? "correct" : "incorrect")">
+            @if (_correct)
+            {
+                <span>✓ Correct!</span>
+            }
+            else
+            {
+                <span>✗ Answer: @string.Join(" / ", ExpectedReadings)</span>
+            }
+        </div>
+        <button class="btn-next" @onclick="Next">Next →</button>
+    }
+    else
+    {
+        <button class="btn-submit" @onclick="Submit" disabled="@string.IsNullOrWhiteSpace(_input)">
+            Check
+        </button>
+    }
+</div>
+
+@code {
+    [Parameter] public string[] ExpectedReadings { get; set; } = [];
+    [Parameter] public EventCallback<bool> OnAnswer { get; set; }
+    [Parameter] public EventCallback OnNext { get; set; }
+
+    private string _input = "";
+    private bool _answered;
+    private bool _correct;
+    private string StateClass => _answered ? (_correct ? "correct" : "incorrect") : "";
+    private ElementReference _inputRef;
+
+    private async Task Submit()
+    {
+        if (string.IsNullOrWhiteSpace(_input)) return;
+        _correct = ExpectedReadings.Any(r =>
+            string.Equals(r.Trim(), _input.Trim(), StringComparison.OrdinalIgnoreCase));
+        _answered = true;
+        await OnAnswer.InvokeAsync(_correct);
+    }
+
+    private async Task OnKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            if (!_answered) await Submit();
+            else await Next();
+        }
+    }
+
+    private async Task Next()
+    {
+        _input = "";
+        _answered = false;
+        _correct = false;
+        await OnNext.InvokeAsync();
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender || !_answered)
+        {
+            try { await _inputRef.FocusAsync(); } catch { }
+        }
+    }
+
+    protected override void OnParametersSet()
+    {
+        _input = "";
+        _answered = false;
+        _correct = false;
+    }
+}

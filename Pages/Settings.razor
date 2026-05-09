@@ -1,0 +1,85 @@
+@page "/settings"
+@inject ISrsService Srs
+
+<PageTitle>Settings — Jappo</PageTitle>
+
+<div class="page-settings">
+    <h1>Settings</h1>
+
+    <section class="settings-section">
+        <h2>Reset Progress</h2>
+        <p>Wipe SRS data for one or all character sets. This cannot be undone.</p>
+
+        <div class="reset-grid">
+            @foreach (var set in Enum.GetValues<CharacterSet>())
+            {
+                <div class="reset-row">
+                    <span>@set progress</span>
+                    @if (_confirming == set)
+                    {
+                        <span class="confirm-prompt">Are you sure?</span>
+                        <button class="btn-danger" @onclick="() => ConfirmReset(set)">Yes, reset</button>
+                        <button class="btn-secondary-sm" @onclick="CancelReset">Cancel</button>
+                    }
+                    else
+                    {
+                        <button class="btn-danger-outline" @onclick="() => _confirming = set">Reset</button>
+                    }
+                </div>
+            }
+            <div class="reset-row">
+                <span>All progress</span>
+                @if (_confirming == null && _confirmAll)
+                {
+                    <span class="confirm-prompt">Are you sure? All sets will be wiped.</span>
+                    <button class="btn-danger" @onclick="ConfirmResetAll">Yes, reset all</button>
+                    <button class="btn-secondary-sm" @onclick="CancelReset">Cancel</button>
+                }
+                else
+                {
+                    <button class="btn-danger-outline" @onclick="() => { _confirmAll = true; _confirming = null; }">
+                        Reset All
+                    </button>
+                }
+            </div>
+        </div>
+
+        @if (!string.IsNullOrEmpty(_message))
+        {
+            <div class="settings-message">@_message</div>
+        }
+    </section>
+
+    <section class="settings-section">
+        <h2>About</h2>
+        <p>Jappo — Japanese Character Trainer</p>
+        <p>Hiragana, Katakana, and JLPT N5 Kanji with spaced repetition (SM-2 algorithm).</p>
+        <p>Progress is stored locally in your browser.</p>
+    </section>
+</div>
+
+@code {
+    private CharacterSet? _confirming;
+    private bool _confirmAll;
+    private string _message = "";
+
+    private async Task ConfirmReset(CharacterSet set)
+    {
+        await Srs.ResetProgressAsync(set);
+        _confirming = null;
+        _message = $"{set} progress reset.";
+    }
+
+    private async Task ConfirmResetAll()
+    {
+        await Srs.ResetProgressAsync();
+        _confirmAll = false;
+        _message = "All progress reset.";
+    }
+
+    private void CancelReset()
+    {
+        _confirming = null;
+        _confirmAll = false;
+    }
+}

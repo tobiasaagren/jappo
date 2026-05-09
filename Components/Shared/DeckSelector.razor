@@ -1,0 +1,42 @@
+@* Lets users pick which character sets to study *@
+
+<div class="deck-selector">
+    @foreach (var set in Enum.GetValues<CharacterSet>())
+    {
+        var active = SelectedSets.Contains(set);
+        <button class="deck-btn @(active ? "active" : "")"
+                @onclick="() => Toggle(set)">
+            <span class="deck-label">@SetLabel(set)</span>
+            <span class="deck-sublabel">@SetSublabel(set)</span>
+        </button>
+    }
+</div>
+
+@code {
+    [Parameter] public List<CharacterSet> SelectedSets { get; set; } = [];
+    [Parameter] public EventCallback<List<CharacterSet>> SelectedSetsChanged { get; set; }
+
+    private async Task Toggle(CharacterSet set)
+    {
+        var updated = new List<CharacterSet>(SelectedSets);
+        if (updated.Contains(set)) updated.Remove(set);
+        else updated.Add(set);
+        await SelectedSetsChanged.InvokeAsync(updated);
+    }
+
+    private static string SetLabel(CharacterSet set) => set switch
+    {
+        CharacterSet.Hiragana => "ひらがな",
+        CharacterSet.Katakana => "カタカナ",
+        CharacterSet.Kanji    => "漢字",
+        _ => set.ToString()
+    };
+
+    private static string SetSublabel(CharacterSet set) => set switch
+    {
+        CharacterSet.Hiragana => "Hiragana · 46",
+        CharacterSet.Katakana => "Katakana · 46",
+        CharacterSet.Kanji    => "JLPT N5 · 80+",
+        _ => ""
+    };
+}

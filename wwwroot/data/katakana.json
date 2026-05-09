@@ -1,0 +1,1117 @@
+{
+  "version": 1,
+  "set": "Katakana",
+  "characters": [
+    {
+      "id": "kata-a",
+      "set": "Katakana",
+      "glyph": "ア",
+      "readings": [
+        "a"
+      ],
+      "unicode": "030A2",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Looks like an arrow — 'ah, there it goes!'",
+      "exampleWords": [
+        {
+          "word": "アイス",
+          "romaji": "aisu",
+          "meaning": "ice cream"
+        },
+        {
+          "word": "アニメ",
+          "romaji": "anime",
+          "meaning": "anime"
+        }
+      ]
+    },
+    {
+      "id": "kata-i",
+      "set": "Katakana",
+      "glyph": "イ",
+      "readings": [
+        "i"
+      ],
+      "unicode": "030A4",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Like an 'I' leaning on a stick",
+      "exampleWords": [
+        {
+          "word": "イヤホン",
+          "romaji": "iyahon",
+          "meaning": "earphones"
+        },
+        {
+          "word": "イタリア",
+          "romaji": "Itaria",
+          "meaning": "Italy"
+        }
+      ]
+    },
+    {
+      "id": "kata-u",
+      "set": "Katakana",
+      "glyph": "ウ",
+      "readings": [
+        "u"
+      ],
+      "unicode": "030A6",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Like a vase with a handle — 'u-rn'",
+      "exampleWords": [
+        {
+          "word": "ウイスキー",
+          "romaji": "uisukii",
+          "meaning": "whisky"
+        },
+        {
+          "word": "ウール",
+          "romaji": "uuru",
+          "meaning": "wool"
+        }
+      ]
+    },
+    {
+      "id": "kata-e",
+      "set": "Katakana",
+      "glyph": "エ",
+      "readings": [
+        "e"
+      ],
+      "unicode": "030A8",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An H-beam from engineering — 'E for engineering'",
+      "exampleWords": [
+        {
+          "word": "エアコン",
+          "romaji": "eakon",
+          "meaning": "air conditioner"
+        },
+        {
+          "word": "エレベーター",
+          "romaji": "erebeetaa",
+          "meaning": "elevator"
+        }
+      ]
+    },
+    {
+      "id": "kata-o",
+      "set": "Katakana",
+      "glyph": "オ",
+      "readings": [
+        "o"
+      ],
+      "unicode": "030AA",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An axe — 'oh! watch the axe!'",
+      "exampleWords": [
+        {
+          "word": "オレンジ",
+          "romaji": "orenji",
+          "meaning": "orange"
+        },
+        {
+          "word": "オフィス",
+          "romaji": "ofisu",
+          "meaning": "office"
+        }
+      ]
+    },
+    {
+      "id": "kata-ka",
+      "set": "Katakana",
+      "glyph": "カ",
+      "readings": [
+        "ka"
+      ],
+      "unicode": "030AB",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A knife — 'ka-rve'",
+      "exampleWords": [
+        {
+          "word": "カメラ",
+          "romaji": "kamera",
+          "meaning": "camera"
+        },
+        {
+          "word": "カフェ",
+          "romaji": "kafe",
+          "meaning": "cafe"
+        }
+      ]
+    },
+    {
+      "id": "kata-ki",
+      "set": "Katakana",
+      "glyph": "キ",
+      "readings": [
+        "ki"
+      ],
+      "unicode": "030AD",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A key cross — 'ki-ey'",
+      "exampleWords": [
+        {
+          "word": "キッチン",
+          "romaji": "kicchin",
+          "meaning": "kitchen"
+        },
+        {
+          "word": "キャンプ",
+          "romaji": "kyanpu",
+          "meaning": "camping"
+        }
+      ]
+    },
+    {
+      "id": "kata-ku",
+      "set": "Katakana",
+      "glyph": "ク",
+      "readings": [
+        "ku"
+      ],
+      "unicode": "030AF",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A diving bird — 'coo' it dives for fish",
+      "exampleWords": [
+        {
+          "word": "クラス",
+          "romaji": "kurasu",
+          "meaning": "class"
+        },
+        {
+          "word": "クッキー",
+          "romaji": "kukkii",
+          "meaning": "cookie"
+        }
+      ]
+    },
+    {
+      "id": "kata-ke",
+      "set": "Katakana",
+      "glyph": "ケ",
+      "readings": [
+        "ke"
+      ],
+      "unicode": "030B1",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A sword with a guard — 'ke-ndo sword'",
+      "exampleWords": [
+        {
+          "word": "ケーキ",
+          "romaji": "keeki",
+          "meaning": "cake"
+        },
+        {
+          "word": "ケータイ",
+          "romaji": "keetai",
+          "meaning": "mobile phone"
+        }
+      ]
+    },
+    {
+      "id": "kata-ko",
+      "set": "Katakana",
+      "glyph": "コ",
+      "readings": [
+        "ko"
+      ],
+      "unicode": "030B3",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Two shelves in a corner — 'corner'",
+      "exampleWords": [
+        {
+          "word": "コーヒー",
+          "romaji": "koohii",
+          "meaning": "coffee"
+        },
+        {
+          "word": "コンビニ",
+          "romaji": "konbini",
+          "meaning": "convenience store"
+        }
+      ]
+    },
+    {
+      "id": "kata-sa",
+      "set": "Katakana",
+      "glyph": "サ",
+      "readings": [
+        "sa"
+      ],
+      "unicode": "030B5",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A cactus with two arms — 'sa-cactus'",
+      "exampleWords": [
+        {
+          "word": "サッカー",
+          "romaji": "sakkaa",
+          "meaning": "soccer"
+        },
+        {
+          "word": "サラダ",
+          "romaji": "sarada",
+          "meaning": "salad"
+        }
+      ]
+    },
+    {
+      "id": "kata-shi",
+      "set": "Katakana",
+      "glyph": "シ",
+      "readings": [
+        "shi",
+        "si"
+      ],
+      "unicode": "030B7",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Three dots and a swoosh — sheep saying 'shii'",
+      "exampleWords": [
+        {
+          "word": "シャワー",
+          "romaji": "shawaa",
+          "meaning": "shower"
+        },
+        {
+          "word": "シャツ",
+          "romaji": "shatsu",
+          "meaning": "shirt"
+        }
+      ]
+    },
+    {
+      "id": "kata-su",
+      "set": "Katakana",
+      "glyph": "ス",
+      "readings": [
+        "su"
+      ],
+      "unicode": "030B9",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A zigzag ski path — 'su-ki'",
+      "exampleWords": [
+        {
+          "word": "スポーツ",
+          "romaji": "supootsu",
+          "meaning": "sports"
+        },
+        {
+          "word": "スーパー",
+          "romaji": "suupaa",
+          "meaning": "supermarket"
+        }
+      ]
+    },
+    {
+      "id": "kata-se",
+      "set": "Katakana",
+      "glyph": "セ",
+      "readings": [
+        "se"
+      ],
+      "unicode": "030BB",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Like the letter 'E' facing left — 'se-side E'",
+      "exampleWords": [
+        {
+          "word": "セーター",
+          "romaji": "seetaa",
+          "meaning": "sweater"
+        },
+        {
+          "word": "センター",
+          "romaji": "sentaa",
+          "meaning": "center"
+        }
+      ]
+    },
+    {
+      "id": "kata-so",
+      "set": "Katakana",
+      "glyph": "ソ",
+      "readings": [
+        "so"
+      ],
+      "unicode": "030BD",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Two strokes — like a sewing needle, 'so'",
+      "exampleWords": [
+        {
+          "word": "ソファ",
+          "romaji": "sofa",
+          "meaning": "sofa"
+        },
+        {
+          "word": "ソフト",
+          "romaji": "sofuto",
+          "meaning": "software / soft"
+        }
+      ]
+    },
+    {
+      "id": "kata-ta",
+      "set": "Katakana",
+      "glyph": "タ",
+      "readings": [
+        "ta"
+      ],
+      "unicode": "030BF",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A talon from a bird — 'ta-lon'",
+      "exampleWords": [
+        {
+          "word": "タクシー",
+          "romaji": "takushii",
+          "meaning": "taxi"
+        },
+        {
+          "word": "タオル",
+          "romaji": "taoru",
+          "meaning": "towel"
+        }
+      ]
+    },
+    {
+      "id": "kata-chi",
+      "set": "Katakana",
+      "glyph": "チ",
+      "readings": [
+        "chi",
+        "ti"
+      ],
+      "unicode": "030C1",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A cheerleader — 'chi-leader!'",
+      "exampleWords": [
+        {
+          "word": "チョコレート",
+          "romaji": "chokoreeto",
+          "meaning": "chocolate"
+        },
+        {
+          "word": "チーズ",
+          "romaji": "chiizu",
+          "meaning": "cheese"
+        }
+      ]
+    },
+    {
+      "id": "kata-tsu",
+      "set": "Katakana",
+      "glyph": "ツ",
+      "readings": [
+        "tsu",
+        "tu"
+      ],
+      "unicode": "030C4",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Three drops — a waterfall, 'tsu-nami'",
+      "exampleWords": [
+        {
+          "word": "ツアー",
+          "romaji": "tsuaa",
+          "meaning": "tour"
+        },
+        {
+          "word": "ツナ",
+          "romaji": "tsuna",
+          "meaning": "tuna"
+        }
+      ]
+    },
+    {
+      "id": "kata-te",
+      "set": "Katakana",
+      "glyph": "テ",
+      "readings": [
+        "te"
+      ],
+      "unicode": "030C6",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A TV antenna on a roof — 'te-levision'",
+      "exampleWords": [
+        {
+          "word": "テレビ",
+          "romaji": "terebi",
+          "meaning": "television"
+        },
+        {
+          "word": "テスト",
+          "romaji": "tesuto",
+          "meaning": "test / exam"
+        }
+      ]
+    },
+    {
+      "id": "kata-to",
+      "set": "Katakana",
+      "glyph": "ト",
+      "readings": [
+        "to"
+      ],
+      "unicode": "030C8",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A totem pole — 'to-tem'",
+      "exampleWords": [
+        {
+          "word": "トマト",
+          "romaji": "tomato",
+          "meaning": "tomato"
+        },
+        {
+          "word": "トイレ",
+          "romaji": "toire",
+          "meaning": "toilet / bathroom"
+        }
+      ]
+    },
+    {
+      "id": "kata-na",
+      "set": "Katakana",
+      "glyph": "ナ",
+      "readings": [
+        "na"
+      ],
+      "unicode": "030CA",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A cross — like a nurse's cross, 'na-rse'",
+      "exampleWords": [
+        {
+          "word": "ナイフ",
+          "romaji": "naifu",
+          "meaning": "knife"
+        },
+        {
+          "word": "ナイト",
+          "romaji": "naito",
+          "meaning": "night / knight"
+        }
+      ]
+    },
+    {
+      "id": "kata-ni",
+      "set": "Katakana",
+      "glyph": "ニ",
+      "readings": [
+        "ni"
+      ],
+      "unicode": "030CB",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Two lines = two = ni (二 is also two in kanji)",
+      "exampleWords": [
+        {
+          "word": "ニュース",
+          "romaji": "nyuusu",
+          "meaning": "news"
+        },
+        {
+          "word": "ニット",
+          "romaji": "nitto",
+          "meaning": "knit / knitwear"
+        }
+      ]
+    },
+    {
+      "id": "kata-nu",
+      "set": "Katakana",
+      "glyph": "ヌ",
+      "readings": [
+        "nu"
+      ],
+      "unicode": "030CC",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Nunchucks crossed — 'nu-nchucks'",
+      "exampleWords": [
+        {
+          "word": "ヌードル",
+          "romaji": "nuudoru",
+          "meaning": "noodle"
+        },
+        {
+          "word": "ヌード",
+          "romaji": "nuudo",
+          "meaning": "nude / bare"
+        }
+      ]
+    },
+    {
+      "id": "kata-ne",
+      "set": "Katakana",
+      "glyph": "ネ",
+      "readings": [
+        "ne"
+      ],
+      "unicode": "030CD",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A fishing net — 'ne-t'",
+      "exampleWords": [
+        {
+          "word": "ネクタイ",
+          "romaji": "nekutai",
+          "meaning": "necktie"
+        },
+        {
+          "word": "ネット",
+          "romaji": "netto",
+          "meaning": "net / internet"
+        }
+      ]
+    },
+    {
+      "id": "kata-no",
+      "set": "Katakana",
+      "glyph": "ノ",
+      "readings": [
+        "no"
+      ],
+      "unicode": "030CE",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A single slash — 'no! just one stroke'",
+      "exampleWords": [
+        {
+          "word": "ノート",
+          "romaji": "nooto",
+          "meaning": "notebook"
+        },
+        {
+          "word": "ノック",
+          "romaji": "nokku",
+          "meaning": "knock"
+        }
+      ]
+    },
+    {
+      "id": "kata-ha",
+      "set": "Katakana",
+      "glyph": "ハ",
+      "readings": [
+        "ha"
+      ],
+      "unicode": "030CF",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An open book or legs — 'hah! open wide'",
+      "exampleWords": [
+        {
+          "word": "ハンバーガー",
+          "romaji": "hanbaagaa",
+          "meaning": "hamburger"
+        },
+        {
+          "word": "ハム",
+          "romaji": "hamu",
+          "meaning": "ham"
+        }
+      ]
+    },
+    {
+      "id": "kata-hi",
+      "set": "Katakana",
+      "glyph": "ヒ",
+      "readings": [
+        "hi"
+      ],
+      "unicode": "030D2",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Like 'E' with one arm — 'hi there!'",
+      "exampleWords": [
+        {
+          "word": "ヒーター",
+          "romaji": "hiitaa",
+          "meaning": "heater"
+        },
+        {
+          "word": "ヒット",
+          "romaji": "hitto",
+          "meaning": "hit"
+        }
+      ]
+    },
+    {
+      "id": "kata-fu",
+      "set": "Katakana",
+      "glyph": "フ",
+      "readings": [
+        "fu",
+        "hu"
+      ],
+      "unicode": "030D5",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A hook — like a fishing hook, 'fuu'",
+      "exampleWords": [
+        {
+          "word": "フランス",
+          "romaji": "Furansu",
+          "meaning": "France"
+        },
+        {
+          "word": "フォーク",
+          "romaji": "fooku",
+          "meaning": "fork"
+        }
+      ]
+    },
+    {
+      "id": "kata-he",
+      "set": "Katakana",
+      "glyph": "ヘ",
+      "readings": [
+        "he",
+        "e"
+      ],
+      "unicode": "030D8",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A mountain peak — 'hey! mountain ahead!'",
+      "exampleWords": [
+        {
+          "word": "ヘルメット",
+          "romaji": "herumetto",
+          "meaning": "helmet"
+        },
+        {
+          "word": "ヘア",
+          "romaji": "hea",
+          "meaning": "hair"
+        }
+      ]
+    },
+    {
+      "id": "kata-ho",
+      "set": "Katakana",
+      "glyph": "ホ",
+      "readings": [
+        "ho"
+      ],
+      "unicode": "030DB",
+      "strokeCount": 4,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A holy cross — 'ho-ly'",
+      "exampleWords": [
+        {
+          "word": "ホテル",
+          "romaji": "hoteru",
+          "meaning": "hotel"
+        },
+        {
+          "word": "ホワイト",
+          "romaji": "howaito",
+          "meaning": "white"
+        }
+      ]
+    },
+    {
+      "id": "kata-ma",
+      "set": "Katakana",
+      "glyph": "マ",
+      "readings": [
+        "ma"
+      ],
+      "unicode": "030DE",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A mama bird swooping down",
+      "exampleWords": [
+        {
+          "word": "マスク",
+          "romaji": "masuku",
+          "meaning": "mask"
+        },
+        {
+          "word": "マップ",
+          "romaji": "mappu",
+          "meaning": "map"
+        }
+      ]
+    },
+    {
+      "id": "kata-mi",
+      "set": "Katakana",
+      "glyph": "ミ",
+      "readings": [
+        "mi"
+      ],
+      "unicode": "030DF",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Three lines — musical notes 'mi mi mi'",
+      "exampleWords": [
+        {
+          "word": "ミルク",
+          "romaji": "miruku",
+          "meaning": "milk"
+        },
+        {
+          "word": "ミーティング",
+          "romaji": "miitingu",
+          "meaning": "meeting"
+        }
+      ]
+    },
+    {
+      "id": "kata-mu",
+      "set": "Katakana",
+      "glyph": "ム",
+      "readings": [
+        "mu"
+      ],
+      "unicode": "030E0",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A moon shape — 'moo-n'",
+      "exampleWords": [
+        {
+          "word": "ムード",
+          "romaji": "muudo",
+          "meaning": "mood"
+        },
+        {
+          "word": "ムービー",
+          "romaji": "muubii",
+          "meaning": "movie"
+        }
+      ]
+    },
+    {
+      "id": "kata-me",
+      "set": "Katakana",
+      "glyph": "メ",
+      "readings": [
+        "me"
+      ],
+      "unicode": "030E1",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "An X with extra flair — 'me X marks the spot'",
+      "exampleWords": [
+        {
+          "word": "メール",
+          "romaji": "meeru",
+          "meaning": "email / mail"
+        },
+        {
+          "word": "メニュー",
+          "romaji": "menyuu",
+          "meaning": "menu"
+        }
+      ]
+    },
+    {
+      "id": "kata-mo",
+      "set": "Katakana",
+      "glyph": "モ",
+      "readings": [
+        "mo"
+      ],
+      "unicode": "030E2",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "More bars — 'mo-re bars on my phone'",
+      "exampleWords": [
+        {
+          "word": "モデル",
+          "romaji": "moderu",
+          "meaning": "model"
+        },
+        {
+          "word": "モバイル",
+          "romaji": "mobairu",
+          "meaning": "mobile"
+        }
+      ]
+    },
+    {
+      "id": "kata-ya",
+      "set": "Katakana",
+      "glyph": "ヤ",
+      "readings": [
+        "ya"
+      ],
+      "unicode": "030E4",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A yak's horns from above — 'ya-k'",
+      "exampleWords": [
+        {
+          "word": "ヤード",
+          "romaji": "yaado",
+          "meaning": "yard (unit)"
+        },
+        {
+          "word": "ヤクルト",
+          "romaji": "Yakuruto",
+          "meaning": "Yakult (drink brand)"
+        }
+      ]
+    },
+    {
+      "id": "kata-yu",
+      "set": "Katakana",
+      "glyph": "ユ",
+      "readings": [
+        "yu"
+      ],
+      "unicode": "030E6",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A U-shape with a base — 'you sit in U'",
+      "exampleWords": [
+        {
+          "word": "ユーモア",
+          "romaji": "yuumoa",
+          "meaning": "humor"
+        },
+        {
+          "word": "ユニフォーム",
+          "romaji": "yunifoomu",
+          "meaning": "uniform"
+        }
+      ]
+    },
+    {
+      "id": "kata-yo",
+      "set": "Katakana",
+      "glyph": "ヨ",
+      "readings": [
+        "yo"
+      ],
+      "unicode": "030E8",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Like the letter E facing right — 'yo E'",
+      "exampleWords": [
+        {
+          "word": "ヨーグルト",
+          "romaji": "yooguruto",
+          "meaning": "yogurt"
+        },
+        {
+          "word": "ヨーロッパ",
+          "romaji": "Yooroppa",
+          "meaning": "Europe"
+        }
+      ]
+    },
+    {
+      "id": "kata-ra",
+      "set": "Katakana",
+      "glyph": "ラ",
+      "readings": [
+        "ra"
+      ],
+      "unicode": "030E9",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A rabbit's head — 'ra-bbit'",
+      "exampleWords": [
+        {
+          "word": "ラーメン",
+          "romaji": "raamen",
+          "meaning": "ramen"
+        },
+        {
+          "word": "ラジオ",
+          "romaji": "rajio",
+          "meaning": "radio"
+        }
+      ]
+    },
+    {
+      "id": "kata-ri",
+      "set": "Katakana",
+      "glyph": "リ",
+      "readings": [
+        "ri"
+      ],
+      "unicode": "030EA",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Two reeds — 'reed reed' = 'ri-ri'",
+      "exampleWords": [
+        {
+          "word": "リモコン",
+          "romaji": "rimokon",
+          "meaning": "remote control"
+        },
+        {
+          "word": "リュック",
+          "romaji": "ryukku",
+          "meaning": "backpack / rucksack"
+        }
+      ]
+    },
+    {
+      "id": "kata-ru",
+      "set": "Katakana",
+      "glyph": "ル",
+      "readings": [
+        "ru"
+      ],
+      "unicode": "030EB",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A lute with a handle — 'lu-te'",
+      "exampleWords": [
+        {
+          "word": "ルール",
+          "romaji": "ruuru",
+          "meaning": "rule"
+        },
+        {
+          "word": "ルーム",
+          "romaji": "ruumu",
+          "meaning": "room"
+        }
+      ]
+    },
+    {
+      "id": "kata-re",
+      "set": "Katakana",
+      "glyph": "レ",
+      "readings": [
+        "re"
+      ],
+      "unicode": "030EC",
+      "strokeCount": 1,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Like the letter 'L' — 're-ally!'",
+      "exampleWords": [
+        {
+          "word": "レストラン",
+          "romaji": "resutoran",
+          "meaning": "restaurant"
+        },
+        {
+          "word": "レモン",
+          "romaji": "remon",
+          "meaning": "lemon"
+        }
+      ]
+    },
+    {
+      "id": "kata-ro",
+      "set": "Katakana",
+      "glyph": "ロ",
+      "readings": [
+        "ro"
+      ],
+      "unicode": "030ED",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A box — a 'ro-om' you're trapped in",
+      "exampleWords": [
+        {
+          "word": "ロボット",
+          "romaji": "robotto",
+          "meaning": "robot"
+        },
+        {
+          "word": "ロッカー",
+          "romaji": "rokkaa",
+          "meaning": "locker"
+        }
+      ]
+    },
+    {
+      "id": "kata-wa",
+      "set": "Katakana",
+      "glyph": "ワ",
+      "readings": [
+        "wa"
+      ],
+      "unicode": "030EF",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "A wine glass — 'wa-ine'",
+      "exampleWords": [
+        {
+          "word": "ワイン",
+          "romaji": "wain",
+          "meaning": "wine"
+        },
+        {
+          "word": "ワード",
+          "romaji": "waado",
+          "meaning": "word / Word (software)"
+        }
+      ]
+    },
+    {
+      "id": "kata-wo",
+      "set": "Katakana",
+      "glyph": "ヲ",
+      "readings": [
+        "wo",
+        "o"
+      ],
+      "unicode": "030F2",
+      "strokeCount": 3,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Rarely used in modern Japanese — mostly in old texts",
+      "exampleWords": [
+        {
+          "word": "ヲタク",
+          "romaji": "wotaku",
+          "meaning": "otaku (nerd/enthusiast)"
+        },
+        {
+          "word": "ヲ",
+          "romaji": "wo",
+          "meaning": "object particle (archaic spelling)"
+        }
+      ]
+    },
+    {
+      "id": "kata-n",
+      "set": "Katakana",
+      "glyph": "ン",
+      "readings": [
+        "n",
+        "m"
+      ],
+      "unicode": "030F3",
+      "strokeCount": 2,
+      "hasStrokeSvg": true,
+      "mnemonicHint": "Like the letter 'n' with a flick — standalone consonant",
+      "exampleWords": [
+        {
+          "word": "パン",
+          "romaji": "pan",
+          "meaning": "bread"
+        },
+        {
+          "word": "ペン",
+          "romaji": "pen",
+          "meaning": "pen"
+        }
+      ]
+    }
+  ]
+}

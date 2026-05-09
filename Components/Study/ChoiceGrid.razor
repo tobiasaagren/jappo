@@ -1,0 +1,48 @@
+<div class="choice-grid">
+    @foreach (var option in Options)
+    {
+        var state = GetState(option.Id);
+        <button class="choice-btn choice-@state"
+                disabled="@_revealed"
+                @onclick="() => Select(option)">
+            @OptionLabel(option)
+        </button>
+    }
+</div>
+
+@code {
+    [Parameter] public List<Character> Options { get; set; } = [];
+    [Parameter] public string CorrectId { get; set; } = "";
+    [Parameter] public bool ShowReadings { get; set; } = true; // false = show glyphs instead
+    [Parameter] public EventCallback<bool> OnAnswer { get; set; }
+
+    private string? _selectedId;
+    private bool _revealed;
+
+    private async Task Select(Character chosen)
+    {
+        if (_revealed) return;
+        _selectedId = chosen.Id;
+        _revealed = true;
+        await OnAnswer.InvokeAsync(chosen.Id == CorrectId);
+    }
+
+    private string GetState(string id)
+    {
+        if (!_revealed) return "neutral";
+        if (id == CorrectId) return "correct";
+        if (id == _selectedId) return "wrong";
+        return "neutral";
+    }
+
+    private string OptionLabel(Character c) =>
+        ShowReadings
+            ? string.Join(" / ", c.Readings)
+            : !string.IsNullOrEmpty(c.Meaning) ? c.Meaning : string.Join(" / ", c.Readings);
+
+    protected override void OnParametersSet()
+    {
+        _selectedId = null;
+        _revealed = false;
+    }
+}

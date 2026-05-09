@@ -1,0 +1,119 @@
+@page "/study/flashcard"
+@inject ISrsService Srs
+@inject ICharacterRepository Repo
+@inject NavigationManager Nav
+
+<PageTitle>Flashcards — Jappo</PageTitle>
+
+<div class="page-study">
+    @if (!_started)
+    {
+        <div class="study-setup">
+            <h1>Flashcard Study</h1>
+            <p class="setup-desc">Cards shown using spaced repetition (SM-2). Rate your recall after each card.</p>
+            <DeckSelector @bind-SelectedSets="_selectedSets" />
+            <button class="btn-primary" @onclick="StartSession" disabled="@(_selectedSets.Count == 0)">
+                Start Session
+            </button>
+        </div>
+    }
+    else if (_done)
+    {
+        <div class="study-done">
+            <div class="done-icon">🎉</div>
+            <h2>Session Complete!</h2>
+            <p>Reviewed @_queue.Count cards.</p>
+            <div class="done-actions">
+                <button class="btn-primary" @onclick="Restart">Study Again</button>
+                <a class="btn-secondary" href="/">Back Home</a>
+            </div>
+        </div>
+    }
+    else if (_current is not null)
+    {
+        <ProgressBar Current="_index" Total="_queue.Count" />
+
+        <FlashcardFace Character="_current"
+                       IsFlipped="_flipped"
+                       OnFlip="OnFlip" />
+
+        @if (_flipped && !_transitioning)
+        {
+            <AnswerButtons OnAnswer="OnAnswer" />
+        }
+    }
+    else
+    {
+        <div class="study-empty">
+            <div class="empty-icon">✨</div>
+            <h2>Nothing due!</h2>
+            <p>All caught up. Come back later for more reviews.</p>
+            <a class="btn-primary" href="/">Back Home</a>
+        </div>
+    }
+</div>
+
+@code {
+    private List<CharacterSet> _selectedSets = [CharacterSet.Hiragana];
+    private List<SrsCard> _queue = [];
+    private int _index;
+    private bool _flipped;
+    private bool _transitioning;
+    private bool _started;
+    private bool _done;
+
+    private Character? _current => _index < _queue.Count
+        ? Repo.GetById(_queue[_index].CharacterId)
+        : null;
+
+    private readonly Random _rng = new();
+
+    private async Task StartSession()
+    {
+        _queue = await Srs.GetDueCardsAsync([.. _selectedSets], 20);
+
+        if (_queue.Count == 0)
+        {
+            var allChars = _selectedSets
+                .SelectMany(s => Repo.GetBySet(s))
+                .OrderBy(_ => _rng.Next())
+                .Take(20)
+                .ToList();
+
+            foreach (var ch in allChars)
+                _queue.Add(await Srs.GetOrCreateCardAsync(ch.Id));
+        }
+
+        _queue = _queue.OrderBy(_ => _rng.Next()).ToList();
+        _index = 0;
+        _flipped = false;
+        _started = true;
+        _done = false;
+    }
+
+    private void OnFlip() => _flipped = true;
+
+    private async Task OnAnswer(SrsQuality quality)
+    {
+        await Srs.ApplyReviewAsync(_queue[_index], quality);
+
+        // Flip back first, wait for CSS transition (500ms), then advance
+        _flipped = false;
+        _transitioning = true;
+        StateHasChanged();
+        await Task.Delay(520);
+        _transitioning = false;
+
+        _index++;
+        if (_index >= _queue.Count)
+            _done = true;
+    }
+
+    private void Restart()
+    {
+        _started = false;
+        _done = false;
+        _index = 0;
+        _queue.Clear();
+    }
+}
