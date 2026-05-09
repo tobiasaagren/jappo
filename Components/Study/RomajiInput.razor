@@ -4,6 +4,11 @@
     <div class="romaji-prompt">Type the reading:</div>
     <input class="romaji-input @StateClass"
            type="text"
+           inputmode="latin"
+           autocomplete="off"
+           autocorrect="off"
+           autocapitalize="none"
+           spellcheck="false"
            placeholder="romaji..."
            @bind="_input"
            @bind:event="oninput"
@@ -43,6 +48,7 @@
     private bool _correct;
     private string StateClass => _answered ? (_correct ? "correct" : "incorrect") : "";
     private ElementReference _inputRef;
+    private string[]? _prevReadings;
 
     private async Task Submit()
     {
@@ -80,8 +86,12 @@
 
     protected override void OnParametersSet()
     {
-        _input = "";
-        _answered = false;
-        _correct = false;
+        if (_prevReadings != ExpectedReadings)
+        {
+            _input = "";
+            _answered = false;
+            _correct = false;
+            _prevReadings = ExpectedReadings;
+        }
     }
 }
