@@ -1,0 +1,38 @@
+<nav class="sidebar" @onclick="CloseIfMobile">
+    <div class="sidebar-header">
+        <a class="brand" href="">
+            <span class="brand-ja">日</span>
+            <span class="brand-text">jappo</span>
+        </a>
+        <button class="menu-toggle" @onclick:stopPropagation @onclick="ToggleMenu">☰</button>
+    </div>
+
+    <div class="nav-links @(_open ? "open" : "")">
+        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+            <span class="nav-icon">🏠</span> Home
+        </NavLink>
+        <div class="nav-section">Study</div>
+        <NavLink class="nav-link" href="study/flashcard">
+            <span class="nav-icon">🃏</span> Flashcards
+        </NavLink>
+        <NavLink class="nav-link" href="study/quiz">
+            <span class="nav-icon">❓</span> Quiz
+        </NavLink>
+        <NavLink class="nav-link" href="study/typing">
+            <span class="nav-icon">⌨️</span> Typing
+        </NavLink>
+        <NavLink class="nav-link" href="stroke-order">
+            <span class="nav-icon">✍️</span> Stroke Order
+        </NavLink>
+        <div class="nav-section">Account</div>
+        <NavLink class="nav-link" href="settings">
+            <span class="nav-icon">⚙️</span> Settings
+        </NavLink>
+    </div>
+</nav>
+
+@code {
+    private bool _open;
+    private void ToggleMenu() => _open = !_open;
+    private void CloseIfMobile() => _open = false;
+}
