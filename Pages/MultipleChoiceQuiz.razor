@@ -9,7 +9,7 @@
     {
         <div class="study-setup">
             <h1>Multiple-Choice Quiz</h1>
-            <p class="setup-desc">See a character and pick the correct reading from four options.</p>
+            <p class="setup-desc">Infinite quiz — pick the correct reading. Tap Finish when done.</p>
             <DeckSelector @bind-SelectedSets="_selectedSets" />
             <button class="btn-primary" @onclick="StartSession" disabled="@(_selectedSets.Count == 0)">
                 Start Quiz
@@ -20,21 +20,32 @@
     {
         <div class="study-done">
             <div class="done-icon">@ScoreEmoji</div>
-            <h2>Quiz Complete!</h2>
-            <p>Score: @_correct / @_queue.Count (@ScorePercent%)</p>
+            <h2>Session Complete!</h2>
+            <p>Score: @_correct / @_totalAnswered (@ScorePercent%)</p>
             <div class="done-actions">
-                <button class="btn-primary" @onclick="Restart">Try Again</button>
+                <button class="btn-primary" @onclick="Restart">Play Again</button>
                 <a class="btn-secondary" href="">Back Home</a>
             </div>
         </div>
     }
     else if (_currentChar is not null)
     {
-        <ProgressBar Current="_index" Total="_queue.Count" />
+        <div class="quiz-header">
+            <div class="quiz-score">
+                <span class="score-correct">@_correct</span>
+                <span class="score-sep">/</span>
+                <span class="score-total">@_totalAnswered</span>
+                @if (_totalAnswered > 0)
+                {
+                    <span class="score-pct">(@ScorePercent%)</span>
+                }
+            </div>
+            <button class="btn-finish" @onclick="Finish">Finish</button>
+        </div>
 
         <div class="quiz-question">
             <div class="quiz-glyph">@_currentChar.Glyph</div>
-            <div class="quiz-prompt">What is the reading of this character?</div>
+            <div class="quiz-prompt">What is the reading?</div>
         </div>
 
         <ChoiceGrid Options="_options"
@@ -42,70 +53,92 @@
                     ShowReadings="@(_currentChar.Set != CharacterSet.Kanji)"
                     OnAnswer="OnAnswer" />
 
+        <div class="quiz-feedback-wrap">
+            @if (_feedback.HasValue)
+            {
+                <div class="quiz-feedback @(_feedback.Value ? "feedback-correct" : "feedback-wrong")">
+                    @if (_feedback.Value)
+                    {
+                        <span>✓ Correct!</span>
+                    }
+                    else
+                    {
+                        <span>✗ @string.Join(" / ", _currentChar.Readings)</span>
+                    }
+                </div>
+            }
+        </div>
     }
 </div>
 
 @code {
     private List<CharacterSet> _selectedSets = [CharacterSet.Hiragana];
-    private List<Character> _queue = [];
     private List<Character> _options = [];
-    private int _index;
+    private Character? _currentChar;
     private int _correct;
+    private int _totalAnswered;
     private bool _started;
     private bool _done;
+    private bool? _feedback;
     private Random _rng = new();
 
-    private Character? _currentChar => _index < _queue.Count ? _queue[_index] : null;
+    private List<Character> Pool => _selectedSets.SelectMany(s => Repo.GetBySet(s)).ToList();
 
-    private int ScorePercent => _queue.Count == 0 ? 0 : _correct * 100 / _queue.Count;
+    private int ScorePercent => _totalAnswered == 0 ? 0 : _correct * 100 / _totalAnswered;
     private string ScoreEmoji => ScorePercent >= 90 ? "🏆" : ScorePercent >= 70 ? "👍" : "📚";
 
     private void StartSession()
     {
-        var pool = _selectedSets.SelectMany(s => Repo.GetBySet(s)).ToList();
-        _queue = pool.OrderBy(_ => _rng.Next()).Take(20).ToList();
-        _index = 0;
         _correct = 0;
+        _totalAnswered = 0;
         _started = true;
         _done = false;
-        BuildOptions();
+        NextQuestion(null);
     }
 
-    private void BuildOptions()
+    private void NextQuestion(string? excludeId)
     {
-        if (_currentChar is null) return;
+        _currentChar = Pool
+            .Where(c => c.Id != excludeId)
+            .OrderBy(_ => _rng.Next())
+            .First();
 
-        var pool = _selectedSets.SelectMany(s => Repo.GetBySet(s))
+        var distractors = Pool
             .Where(c => c.Id != _currentChar.Id)
             .OrderBy(_ => _rng.Next())
             .Take(3)
             .ToList();
 
-        pool.Add(_currentChar);
-        _options = pool.OrderBy(_ => _rng.Next()).ToList();
+        distractors.Add(_currentChar);
+        _options = distractors.OrderBy(_ => _rng.Next()).ToList();
+        _feedback = null;
     }
 
     private async Task OnAnswer(bool correct)
     {
         if (correct) _correct++;
+        _totalAnswered++;
+        _feedback = correct;
 
-        var card = await Srs.GetOrCreateCardAsync(_currentChar!.Id);
+        var prevId = _currentChar!.Id;
+        var card = await Srs.GetOrCreateCardAsync(prevId);
         await Srs.ApplyReviewAsync(card, correct ? SrsQuality.Good : SrsQuality.Blackout);
 
         StateHasChanged();
-        await Task.Delay(800);
+        await Task.Delay(1000);
 
-        _index++;
-        if (_index >= _queue.Count) _done = true;
-        else BuildOptions();
+        NextQuestion(prevId);
+    }
+
+    private void Finish()
+    {
+        _done = true;
     }
 
     private void Restart()
     {
         _started = false;
         _done = false;
-        _index = 0;
-        _correct = 0;
-        _queue.Clear();
+        _currentChar = null;
     }
 }
