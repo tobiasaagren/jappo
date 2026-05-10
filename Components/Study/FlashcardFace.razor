@@ -1,8 +1,15 @@
+@inject IJSRuntime JS
+@using jappo.Utilities
+
 <div class="flashcard @(IsFlipped ? "flipped" : "")" @onclick="Flip">
     <div class="flashcard-inner">
         <div class="flashcard-front">
             <div class="flashcard-glyph">@Character?.Glyph</div>
             <div class="tap-hint">tap to reveal</div>
+            @if (Character is not null)
+            {
+                <button class="speak-btn" @onclick="Speak" @onclick:stopPropagation="true" title="Listen">🔊</button>
+            }
         </div>
         <div class="flashcard-back">
             <div class="flashcard-glyph small">@Character?.Glyph</div>
@@ -12,6 +19,12 @@
                     @string.Join(" · ", readings)
                 }
             </div>
+            @if (Character?.Set == CharacterSet.Kanji && Character.Readings is { Length: > 0 } kr)
+            {
+                <div class="flashcard-romaji">
+                    @string.Join(" · ", kr.Select(RomajiConverter.Convert))
+                </div>
+            }
             @if (!string.IsNullOrEmpty(Character?.Meaning))
             {
                 <div class="flashcard-meaning">@Character.Meaning</div>
@@ -46,5 +59,11 @@
     {
         if (!IsFlipped)
             await OnFlip.InvokeAsync();
+    }
+
+    private async Task Speak()
+    {
+        if (Character is not null)
+            await JS.InvokeVoidAsync("jappoAudio.speak", Character.Glyph);
     }
 }
