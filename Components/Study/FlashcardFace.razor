@@ -6,10 +6,6 @@
         <div class="flashcard-front">
             <div class="flashcard-glyph">@Character?.Glyph</div>
             <div class="tap-hint">tap to reveal</div>
-            @if (Character is not null)
-            {
-                <button class="speak-btn" @onclick="Speak" @onclick:stopPropagation="true" title="Listen">🔊</button>
-            }
         </div>
         <div class="flashcard-back">
             <div class="flashcard-glyph small">@Character?.Glyph</div>
@@ -28,6 +24,10 @@
             @if (!string.IsNullOrEmpty(Character?.Meaning))
             {
                 <div class="flashcard-meaning">@Character.Meaning</div>
+            }
+            @if (Character is not null)
+            {
+                <button class="speak-btn" @onclick="Speak" @onclick:stopPropagation="true" title="Listen">🔊</button>
             }
             @if (Character?.ExampleWords is { Length: > 0 } examples)
             {
