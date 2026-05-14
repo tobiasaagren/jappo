@@ -1,0 +1,162 @@
+@page "/study/listening"
+@inject ISrsService Srs
+@inject ICharacterRepository Repo
+@inject IJSRuntime JS
+
+<PageTitle>Listening Quiz — Jappo</PageTitle>
+
+<div class="page-study">
+    @if (!_started)
+    {
+        <div class="study-setup">
+            <h1>Listening Quiz</h1>
+            <p class="setup-desc">Hear a character spoken aloud — pick the correct glyph.</p>
+            <DeckSelector @bind-SelectedSets="_selectedSets" />
+            <button class="btn-primary" @onclick="StartSession" disabled="@(_selectedSets.Count == 0)">
+                Start Quiz
+            </button>
+        </div>
+    }
+    else if (_done)
+    {
+        <div class="study-done">
+            <div class="done-icon">@ScoreEmoji</div>
+            <h2>Session Complete!</h2>
+            <p>Score: @_correct / @_totalAnswered (@ScorePercent%)</p>
+            <div class="done-actions">
+                <button class="btn-primary" @onclick="Restart">Play Again</button>
+                <a class="btn-secondary" href="">Back Home</a>
+            </div>
+        </div>
+    }
+    else if (_currentChar is not null)
+    {
+        <div class="quiz-header">
+            <div class="quiz-score">
+                <span class="score-correct">@_correct</span>
+                <span class="score-sep">/</span>
+                <span class="score-total">@_totalAnswered</span>
+                @if (_totalAnswered > 0)
+                {
+                    <span class="score-pct">(@ScorePercent%)</span>
+                }
+            </div>
+            <button class="btn-finish" @onclick="Finish">Finish</button>
+        </div>
+
+        <div class="quiz-question">
+            <button class="speak-btn speak-btn-large" @onclick="Speak" title="Play audio">🔊</button>
+            <div class="quiz-prompt">Which character did you hear?</div>
+        </div>
+
+        <ChoiceGrid Options="_options"
+                    CorrectId="@(_currentChar.Id)"
+                    ShowGlyphs="true"
+                    OnAnswer="OnAnswer" />
+
+        <div class="quiz-feedback-wrap">
+            @if (_feedback.HasValue)
+            {
+                <div class="quiz-feedback @(_feedback.Value ? "feedback-correct" : "feedback-wrong")">
+                    @if (_feedback.Value)
+                    {
+                        <span>✓ Correct! — @_currentChar.Glyph (@string.Join(" / ", _currentChar.Readings))</span>
+                    }
+                    else
+                    {
+                        <span>✗ It was @_currentChar.Glyph (@string.Join(" / ", _currentChar.Readings))</span>
+                    }
+                </div>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    private List<CharacterSet> _selectedSets = [CharacterSet.Hiragana];
+    private List<Character> _options = [];
+    private Character? _currentChar;
+    private int _correct;
+    private int _totalAnswered;
+    private bool _started;
+    private bool _done;
+    private bool? _feedback;
+    private bool _shouldSpeak;
+    private Random _rng = new();
+
+    private List<Character> Pool => _selectedSets.SelectMany(s => Repo.GetBySet(s)).ToList();
+
+    private int ScorePercent => _totalAnswered == 0 ? 0 : _correct * 100 / _totalAnswered;
+    private string ScoreEmoji => ScorePercent >= 90 ? "🏆" : ScorePercent >= 70 ? "👍" : "📚";
+
+    private void StartSession()
+    {
+        _correct = 0;
+        _totalAnswered = 0;
+        _started = true;
+        _done = false;
+        NextQuestion(null);
+    }
+
+    private void NextQuestion(string? excludeId)
+    {
+        _currentChar = Pool
+            .Where(c => c.Id != excludeId)
+            .OrderBy(_ => _rng.Next())
+            .First();
+
+        var distractors = Pool
+            .Where(c => c.Id != _currentChar.Id)
+            .OrderBy(_ => _rng.Next())
+            .Take(3)
+            .ToList();
+
+        distractors.Add(_currentChar);
+        _options = distractors.OrderBy(_ => _rng.Next()).ToList();
+        _feedback = null;
+        _shouldSpeak = true;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (_shouldSpeak && _currentChar is not null)
+        {
+            _shouldSpeak = false;
+            await JS.InvokeVoidAsync("jappoAudio.speak", _currentChar.Glyph);
+        }
+    }
+
+    private async Task Speak()
+    {
+        if (_currentChar is not null)
+            await JS.InvokeVoidAsync("jappoAudio.speak", _currentChar.Glyph);
+    }
+
+    private async Task OnAnswer(bool correct)
+    {
+        if (correct) _correct++;
+        _totalAnswered++;
+        _feedback = correct;
+
+        var prevId = _currentChar!.Id;
+        var card = await Srs.GetOrCreateCardAsync(prevId);
+        await Srs.ApplyReviewAsync(card, correct ? SrsQuality.Good : SrsQuality.Blackout);
+
+        StateHasChanged();
+        await Task.Delay(1000);
+
+        NextQuestion(prevId);
+    }
+
+    private void Finish()
+    {
+        _done = true;
+    }
+
+    private void Restart()
+    {
+        _started = false;
+        _done = false;
+        _currentChar = null;
+    }
+}

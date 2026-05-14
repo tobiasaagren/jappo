@@ -13,7 +13,8 @@
 @code {
     [Parameter] public List<Character> Options { get; set; } = [];
     [Parameter] public string CorrectId { get; set; } = "";
-    [Parameter] public bool ShowReadings { get; set; } = true; // false = show glyphs instead
+    [Parameter] public bool ShowReadings { get; set; } = true;
+    [Parameter] public bool ShowGlyphs { get; set; } = false;
     [Parameter] public EventCallback<bool> OnAnswer { get; set; }
 
     private string? _selectedId;
@@ -36,9 +37,11 @@
     }
 
     private string OptionLabel(Character c) =>
-        ShowReadings
-            ? string.Join(" / ", c.Readings)
-            : !string.IsNullOrEmpty(c.Meaning) ? c.Meaning : string.Join(" / ", c.Readings);
+        ShowGlyphs
+            ? c.Glyph
+            : ShowReadings
+                ? string.Join(" / ", c.Readings)
+                : !string.IsNullOrEmpty(c.Meaning) ? c.Meaning : string.Join(" / ", c.Readings);
 
     protected override void OnParametersSet()
     {
