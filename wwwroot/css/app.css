@@ -116,6 +116,14 @@ button { cursor: pointer; font-family: inherit; }
     padding: 12px 0;
     gap: 2px;
 }
+.nav-links-grow { flex: 1; }
+.nav-version {
+    padding: 12px 16px;
+    font-size: 11px;
+    color: var(--text-muted);
+    opacity: 0.5;
+    user-select: none;
+}
 .nav-section {
     padding: 12px 16px 4px;
     font-size: 10px;
